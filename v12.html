@@ -1,0 +1,2688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia del Nazareno - Distrito El Alto Noroeste</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;    /* Azul principal */
+            --secondary-color: #1a365d;  /* Azul oscuro */
+            --accent-color: #148f77;     /* Verde esmeralda */
+            --light-color: #f0f7ff;      /* Azul muy claro */
+            --text-color: #333333;       /* Texto principal */
+            --white: #ffffff;            /* Blanco */
+            --gray-light: #f8f9fa;       /* Gris claro */
+            --peace-color: #e6f2ff;      /* Azul paz */
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: #fdfdfd;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background-color: var(--white) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+            font-size: 1.5rem;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--secondary-color) !important;
+            font-weight: 500;
+            margin: 0 0.3rem;
+            transition: color 0.3s;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        .dropdown-menu {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid var(--accent-color);
+        }
+        
+        .dropdown-item:hover {
+            background-color: var(--peace-color);
+            color: var(--accent-color);
+        }
+        .logo-container {
+                gap: 8px;
+            }
+        
+        /* Carrusel */
+        .carousel-item {
+            height: 650px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .carousel-caption {
+            background: rgba(26, 54, 93, 0.85);
+            padding: 2.5rem;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            bottom: 15%;
+        }
+        
+        .carousel-caption h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .carousel-caption p {
+            font-size: 1.2rem;
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+        
+        /* Secciones */
+        .section-title {
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 2.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+        
+        .section-title.center-title:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Estilos para la página de Buscar Iglesia */
+        .church-search-page {
+            min-height: 80vh;
+            padding: 100px 0 50px;
+        }
+        
+        .church-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .church-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .church-pastor {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .church-pastor i {
+            margin-right: 8px;
+        }
+        
+        .church-location {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .church-location i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        .social-icons-sm {
+            display: flex;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+        
+        .facebook-icon {
+            background-color: #3b5998;
+        }
+        
+        .instagram-icon {
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        }
+        
+        .youtube-icon {
+            background-color: #ff0000;
+        }
+        
+        .location-icon {
+            background-color: var(--accent-color);
+        }
+        
+        /* Estadísticas en página principal */
+        .stats-section {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 3rem 0;
+            border-radius: 15px;
+            margin: 3rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* Tarjetas de zonas (mantenidas para otras secciones) */
+        .zone-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.8rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border-top: 5px solid var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .zone-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .zone-card h5 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        /* Tarjetas de ministerios MEJORADAS */
+        .ministry-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            margin-bottom: 2rem;
+            cursor: pointer;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+        }
+        
+        .ministry-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--accent-color);
+        }
+        
+        .ministry-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s;
+        }
+        
+        .ministry-card:hover .ministry-img {
+            transform: scale(1.05);
+        }
+        
+        .ministry-content {
+            padding: 1.8rem;
+        }
+        
+        .ministry-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .ministry-card h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.8rem;
+            min-height: 56px;
+        }
+        
+        .ministry-card p {
+            color: var(--text-color);
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            min-height: 72px;
+        }
+        
+        .ministry-btn {
+            background-color: var(--peace-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .ministry-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Tarjetas de novedades */
+        .news-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            transition: all 0.3s;
+        }
+        
+        .news-card:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .news-img {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .news-content {
+            padding: 1.8rem;
+        }
+        
+        .news-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        /* Calendario */
+        .calendar-section {
+            background-color: var(--peace-color);
+            border-radius: 15px;
+            padding: 2.5rem;
+        }
+        
+        .calendar-day {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 1.2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+            margin-bottom: 1rem;
+        }
+        
+        .calendar-day h5 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .calendar-event {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 6px;
+            padding: 0.5rem;
+            margin: 0.3rem 0;
+            font-size: 0.85rem;
+        }
+        
+        /* Botones */
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+            padding: 0.6rem 1.8rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding-top: 3.5rem;
+            padding-bottom: 2rem;
+        }
+        
+        .footer-title {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.7rem;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive - MEJORADO */
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 450px;
+            }
+            
+            .carousel-caption {
+                padding: 1.5rem;
+                bottom: 10%;
+            }
+            
+            .carousel-caption h2 {
+                font-size: 1.8rem;
+            }
+            
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .ministry-card h4 {
+                min-height: auto;
+            }
+            
+            .ministry-card p {
+                min-height: auto;
+            }
+            
+            .ministry-img {
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .carousel-item {
+                height: 350px;
+            }
+            
+            .stats-section {
+                padding: 2rem 0;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Animaciones */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Secciones con fondo alternado */
+        .bg-light-section {
+            background-color: var(--peace-color);
+        }
+        
+        /* Estilos para las páginas de contenido */
+        .content-page {
+            min-height: 70vh;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            display: none;
+        }
+        
+        .content-page.active {
+            display: block;
+        }
+        
+        .content-page .content-image {
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        
+        .content-page .content-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .back-button {
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        
+        /* Páginas específicas para ministerios */
+        .ministry-page {
+            background-color: var(--peace-color);
+            min-height: 70vh;
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+        
+        .ministry-page .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .ministry-page-image {
+            height: 300px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 2rem;
+        }
+        
+        .ministry-info-box {
+            background-color: var(--peace-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .ministry-info-box h5 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Ocultar secciones principales cuando se muestra una página de contenido */
+        body.show-content .main-section {
+            display: none;
+        }
+        
+        /* Scroll suave para toda la página */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Estilos de paz adicionales */
+        .peace-pattern {
+            background-image: radial-gradient(circle, rgba(44, 90, 160, 0.03) 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="peace-pattern">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="showMainPage()">
+                <img  src="image/LOGO-gris-NAZARENO-DISTRITO-EL-ALTO-NOROESTE-HORIZONTAL.png" alt="Logo Iglesia del Nazareno" class="img-fluid" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="showMainPage()">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Iglesia del Nazareno
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="showContentPage('historia')">Historia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="showContentPage('creemos')">En qué creemos</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="showContentPage('equipo')">Nuestro equipo</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="showContentPage('proposito')">Nuestro propósito</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="showContentPage('valores')">Nuestros valores</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContentPage('buscar-iglesia')">Buscar Iglesia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showMainPage(); setTimeout(() => document.getElementById('ministerios').scrollIntoView({behavior: 'smooth'}), 100)">Ministerios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showMainPage(); setTimeout(() => document.getElementById('novedades').scrollIntoView({behavior: 'smooth'}), 100)">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showMainPage(); setTimeout(() => document.getElementById('contacto').scrollIntoView({behavior: 'smooth'}), 100)">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Página Principal (visible por defecto) -->
+    <div id="main-page" class="main-section">
+        <!-- Carrusel -->
+        <section id="inicio" class="fade-in">
+            <div id="carouselIglesia" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIglesia" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselIglesia" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselIglesia" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('image/Foto\ Grupal.jpeg');">
+                        <div class="carousel-caption">
+                            <h2>Ser como Jesús</h2>
+                            <p class="lead">Siguiendo el ejemplo de Cristo en amor, servicio y santidad para transformar vidas y comunidades.</p>
+                            <a href="#" class="btn btn-primary-custom mt-3" onclick="showContentPage('proposito')">Conoce nuestro propósito</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/Sendero-de-Gracia.png');">
+                        <div class="carousel-caption">
+                            <h2>Sendero de la Gracia</h2>
+                            <p class="lead">Caminando en la gracia transformadora de Dios cada día, guiados por su amor y misericordia infinita.</p>
+                            <a href="#" class="btn btn-primary-custom mt-3" onclick="showContentPage('buscar-iglesia')">Encuentra una Iglesia</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('image/llamados-a-Santidad.png');">
+                        <div class="carousel-caption">
+                            <h2>Llamados a Santidad</h2>
+                            <p class="lead">"Sed santos, porque yo soy santo" (1 Pedro 1:16)</p>
+                            <p>Iglesia del Nazareno - Llamados a Santidad y servicio en amor.</p>
+                            <a href="#" class="btn btn-primary-custom mt-3" onclick="showContentPage('creemos')">Descubre nuestras creencias</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIglesia" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIglesia" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Sección de Estadísticas Principal -->
+         <section class="py-5 fade-in">
+            <div class="container">
+                <div class="stats-section">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">11</div>
+                                <div class="stat-label">ZONAS</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">92</div>
+                                <div class="stat-label">IGLESIAS</div>
+                            </div>
+                        </div>
+                         <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">40</div>
+                                <div class="stat-label">PASTORES</div>
+                            </div>
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="stat-item">
+                                <div class="stat-number">5539</div>
+                                <div class="stat-label">MIEMBROS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h3 class="text-white">MISIÓN</h3>
+                        <p class="lead text-white">Nuestra misión es hacer discípulos semejantes a Cristo en las naciones.</p>
+                        <a href="#" class="btn btn-light mt-3" onclick="showContentPage('proposito')">Conoce más</a>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-lg-8">
+                        <h2 class="section-title">IGLESIA DEL NAZARENO - DISTRITO EL ALTO NOROESTE</h2>
+                        <p class="lead">Bienvenidos a la familia de la Iglesia del Nazareno en el Distrito El Alto Noroeste. Somos una comunidad de fe comprometida con hacer discípulos de Jesucristo.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#" class="btn btn-primary-custom" onclick="showContentPage('buscar-iglesia')">
+                            <i class="bi bi-search me-2"></i>Buscar Iglesia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Sección: Ministerios (COMPLETADA con 12 tarjetas) -->
+        <section id="ministerios" class="py-5 bg-light-section fade-in">
+            <div class="container">
+                <h2 class="section-title center-title text-center">MINISTERIOS</h2>
+                <p class="text-center mb-5">Descubre los diferentes ministerios de nuestra iglesia y cómo puedes participar en ellos.</p>
+                
+                <div class="row">
+                    
+                    <!-- Ministerio : Comunicaciones -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ministry-card" onclick="showMinistryPage('comunicaciones')">
+                            <div class="ministry-img" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="ministry-content">
+                                <div class="ministry-icon">
+                                    <i class="bi bi-megaphone-fill"></i>
+                                </div>
+                                <h4>Comunicaciones</h4>
+                                <p>Ministerio encargado de comunicar las actividades y novedades de la iglesia a través de diversos medios.</p>
+                                <button class="ministry-btn">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                    <!-- Ministerio : Educación Teológica -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ministry-card" onclick="showMinistryPage('educacion-teologica')">
+                            <div class="ministry-img" style="background-image: url('https://images.unsplash.com/photo-1518834103328-5d0b5c4c6d6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="ministry-content">
+                                <div class="ministry-icon">
+                                    <i class="bi bi-book-fill"></i>
+                                </div>
+                                <h4>Educación Teológica (ETED)</h4>
+                                <p>Formación de líderes y educación bíblica para todos los miembros de nuestra comunidad de fe.</p>
+                                <button class="ministry-btn">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ministerio 5: DNI (Discipulado Nazareno Internacional) -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ministry-card" onclick="showMinistryPage('dni')">
+                            <div class="ministry-img" style="background-image: url('https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="ministry-content">
+                                <div class="ministry-icon">
+                                    <i class="bi bi-globe-americas"></i>
+                                </div>
+                                <h4>DNI - Discipulado Nazareno Internacional</h4>
+                                <p>Ministerio enfocado en el desarrollo de discípulos comprometidos con la misión global.</p>
+                                <button class="ministry-btn">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ministerio 7: JNI (Juventud Nazarena Internacional) -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ministry-card" onclick="showMinistryPage('jni')">
+                            <div class="ministry-img" style="background-image: url('image/JNI.jpeg');"></div>
+                            <div class="ministry-content">
+                                <div class="ministry-icon">
+                                    <i class="bi bi-emoji-smile-fill"></i>
+                                </div>
+                                <h4>JNI - Juventud Nazarena Internacional</h4>
+                                <p>Ministerio juvenil enfocado en discipular a la próxima generación para Cristo.</p>
+                                <button class="ministry-btn">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ministerio 8: Mujeres -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ministry-card" onclick="showMinistryPage('mujeres')">
+                            <div class="ministry-img" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="ministry-content">
+                                <div class="ministry-icon">
+                                    <i class="bi bi-gender-female"></i>
+                                </div>
+                                <h4>Ministerio de Mujeres</h4>
+                                <p>Discipulado, compañerismo y servicio para mujeres de todas las edades y etapas de la vida.</p>
+                                <button class="ministry-btn">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ministerio 10: MINI (Ministerio Infantil Nazareno Internacional) -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ministry-card" onclick="showMinistryPage('mini')">
+                            <div class="ministry-img" style="background-image: url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="ministry-content">
+                                <div class="ministry-icon">
+                                    <i class="bi bi-balloon-fill"></i>
+                                </div>
+                                <h4>MNI </h4>
+                                <p>Ministerio dedicado a discipular a los niños y enseñarles los fundamentos de la fe cristiana.</p>
+                                <button class="ministry-btn">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Calendario Distrital -->
+        <section class="py-5 fade-in">
+            <div class="container">
+                <h2 class="section-title center-title text-center">CALENDARIO DISTRITAL</h2>
+                <p class="text-center mb-5">Eventos y actividades programadas para nuestro distrito. Únete a nuestras actividades.</p>
+                
+                <div class="calendar-section">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="calendar-day">
+                                <h5>Febrero</h5>
+                                <div class="calendar-event">Conferencia de Jóvenes</div>
+                                <div class="calendar-event">Reunión de Pastores</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="calendar-day">
+                                <h5>Marzo</h5>
+                                <div class="calendar-event">Campamento Infantil</div>
+                                <div class="calendar-event">Taller de Liderazgo</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="calendar-day">
+                                <h5>Abril</h5>
+                                <div class="calendar-event">Seminario Teológico</div>
+                                <div class="calendar-event">Culto de Avivamiento</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="calendar-day">
+                                <h5>Mayo</h5>
+                                <div class="calendar-event">Asamblea Distrital</div>
+                                <div class="calendar-event">Feria de Ministerios</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="image/The Calendar.jpeg" class="btn btn-primary-custom">Ver Calendario Completo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="novedades" class="py-5 bg-light-section fade-in">
+            <div class="container">
+                <h2 class="section-title center-title text-center">NOVEDADES</h2>
+                <p class="text-center mb-5">Últimas eventos de nuestra iglesia y distrito.</p>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-img" style="background-image: url('image/Asamblea.jpg');"></div>
+                            <div class="news-content">
+                                <div class="news-date"><i class="bi bi-calendar me-1"></i> Enero 15 2026</div>
+                                <h5>Congreso</h5>
+                                <p>La Iglesia del Nazareno anuncia el congreso.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="news-content">
+                                <div class="news-date"><i class="bi bi-calendar me-1"></i> Febrero 22, 2026</div>
+                                <h5>Congreso "Mujeres que Edifican"</h5>
+                                <p>Congreso reunió a 52 participantes para fortalecer el ministerio femenino.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                            <div class="news-content">
+                                <div class="news-date"><i class="bi bi-calendar me-1"></i> Febrero 22, 2026</div>
+                                <h5>Campamento Juvenil</h5>
+                                <p> taller del FEM en campamento juvenil con participación masiva de jóvenes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Páginas de Contenido -->
+    
+    <!-- Página de Buscar Iglesia -->
+    <div id="buscar-iglesia-page" class="content-page church-search-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver al Inicio
+            </button>
+            
+            <h1 class="section-title">Busca Una Iglesia</h1>
+            <p class="lead mb-5">¡Localiza una iglesia del Nazareno cerca de ti en nuestro distrito!</p>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="zone-card">
+                        <h5>Filtros de Búsqueda</h5>
+                        <div class="mb-3">
+                            <label for="zonaSelect" class="form-label">Zona</label>
+                            <select class="form-select" id="zonaSelect" onchange="filterChurches()">
+                                <option value="todas">Todas las zonas</option>
+                                <option value="norte">Zona El Alto Norte</option>
+                                <option value="sur">Zona El Alto Sur</option>
+                                <option value="carabuco">Zona Carabuco</option>
+                                <option value="copacabana">Zona Copacabana</option>
+                                <option value="lago">Zona Lago</option>
+                                <option value="central">Zona El Alto Central</option>
+                                <option value="cordillera">Zona Cordillera</option>
+                                <option value="machaca">Zona Jesus de Machaca</option>
+                                <option value="andesI">Zona Los Andes I</option>
+                                <option value="andesII">Zona Los Andes II</option>
+                                <option value="cobija/Pando">Zona 11-Cobija/Pando</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreIglesia" class="form-label">Nombre de la Iglesia</label>
+                            <input type="text" class="form-control" id="nombreIglesia" placeholder="Ej: Emmanuel" onkeyup="filterChurches()">
+                        </div>
+                        <button class="btn btn-primary-custom w-100" onclick="resetFilters()">
+                            <i class="bi bi-arrow-clockwise me-2"></i>Restablecer Filtros
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div id="iglesias-container">
+                        <!-- Las iglesias se cargarán aquí con JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Historia -->
+    <div id="historia-page" class="content-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver al Inicio
+            </button>
+            
+            <h1 class="section-title">Historia de la Iglesia del Nazareno Distrito El Alto Noroeste</h1>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-image" style="background-image: url('image/para-definir-imagen.jpg');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-text">
+                     <p>La organización del Distrito El Alto Noroeste de la Iglesia del Nazareno se realizó los días 7 y 8 de enero de 2006, a horas 15:00, en la Iglesia del Nazareno 16 de Julio, en la ciudad de El Alto, La Paz. Este histórico encuentro contó con la participación de 190 delegados provenientes de todas las zonas de El Alto y del ex Distrito Titicaca, marcando el inicio formal del trabajo distrital en la región.
+                    La asamblea fue dirigida por los pastores Rev. Marlon King, Rev. Efraín Flores y Ptor. Edwin Apaza, secretario. Durante el proceso de elección del liderazgo, tras siete rondas de votación entre 24 reverendos nominados, fue elegido como Superintendente Distrital el Rev. Zoilo Ajata Flores, con 157 votos, para la gestión 2006–2007, consolidando la estructura administrativa y pastoral del nuevo distrito.
+                    Al momento de su conformación, el distrito estaba integrado por 11 zonas, contaba con 107 pastores y jubilados, y supervisaba 80 iglesias, de las cuales 75 eran activas. Asimismo, se estableció la primera oficina distrital bajo la modalidad de anticrético en la zona 16 de Julio, sentando las bases organizativas, ministeriales y misioneras para el crecimiento y fortalecimiento de la Iglesia del Nazareno en el Distrito El Alto Noroeste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- En qué creemos -->
+    <div id="creemos-page" class="content-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver al Inicio
+            </button>
+            
+            <h1 class="section-title">En qué creemos</h1>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-image" style="background-image: url('image/para-definir-imagen.jpg');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-text">
+                        <h3>Nuestras Fundamentos</h3>
+                        <p>la Iglesia del Nazareno existe como un movimiento mundial de santidad y de la Gran Comisión en la tradición arminiana wesleyana.</p>
+                        
+                        <h5 class="mt-4">Nuestra herencia wesleyana de SANTIDAD</h5>
+                        <p>La Iglesia del Nazareno se identifica como parte de la Iglesia universal, afirmando los credos históricos y la continuidad del pueblo de Dios a través de los siglos. Reconocemos nuestra herencia en la predicación fiel de la Palabra, los sacramentos y un ministerio apostólico. Nos unimos a la tradición cristiana que llama a una vida santa y a la devoción completa a Dios.
+                        Nuestra identidad teológica se forja a través del Avivamiento Wesleyano, que enfatizó la justificación por fe, la santificación como obra de gracia y el testimonio del Espíritu. Este movimiento se caracterizó por la predicación laica, los grupos pequeños de discipulado y una búsqueda apasionada de la santidad práctica. Líderes como Phoebe Palmer y los campamentos de santidad expandieron este mensaje globalmente en el siglo XIX.
+                        La Iglesia del Nazareno nace de la unión de varias congregaciones del movimiento de santidad, con el propósito de difundir la santidad bíblica en todas las naciones. Somos herederos directos de este impulso wesleyano, comprometidos a vivir y proclamar la entera santificación como transformación a la semejanza de Cristo, uniendo fe, comunidad y misión en un testimonio integral.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="content-text">
+                        <h3>Nuestra Identidad Teológica</h3>
+                        <p>Somos una iglesia cristiana, evangélica, wesleyana y de santidad.</p>
+                        <h5 class="mt-4">CRISTIANA</h5>
+                        <p>– Afirmamos los credos históricos de la fe cristiana y la doctrina trinitaria.</p>
+                        <p>– Proclamamos a Jesucristo como único Salvador y Señor.</p>
+
+                        <h5 class="mt-4">EVANGÉLICA</h5>
+                        <p>– Creemos en la autoridad suprema de las Escrituras.</p>
+                        <p>– Sostenemos la salvación solo por gracia mediante la fe.</p>
+                        
+                        <h5 class="mt-4">WESLEYANA</h5>
+                        <p>– Seguimos el énfasis de Juan Wesley en la gracia preveniente, justificante y santificante.</p>
+                        <p>– Valoramos el "Cuadrilátero Wesleyano": Escritura, razón, tradición y experiencia.</p>
+
+                        <h5 class="mt-4">DE SANTIDAD</h5>
+                        <p>– Creemos en la entera santificación como obra posterior a la regeneración, por la cual el creyente es limpiado del pecado original y lleno del amor perfecto de Dios.</p>
+                        <p>– Vivimos la santidad como semejanza a Cristo, expresada en amor a Dios y al prójimo.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-image" style="background-image: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nuestro equipo -->
+    <div id="equipo-page" class="content-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver al Inicio
+            </button>
+            
+            <h1 class="section-title">Nuestro Equipo</h1>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-image" style="background-image: url('https://images.unsplash.com/photo-1544764200-d9e1c76bdec4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-text">
+                        <h3>Liderazgo Pastoral</h3>
+                        <p>Nuestro distrito está dirigido por un equipo comprometido de pastores y líderes que sirven con pasión y dedicación.</p>
+                        
+                        <h5 class="mt-4">Superintendente Distrital</h5>
+                        <p>Lidera la visión general del distrito y supervisa el trabajo ministerial en todas las zonas.</p>
+                        
+                        <h5 class="mt-4">Secretario Distrital</h5>
+                        <p>Coordina la administración y documentación del distrito, asegurando una comunicación efectiva.</p>
+                        
+                        <h5 class="mt-4">Tesorero Distrital</h5>
+                        <p>Administra los recursos financieros del distrito con integridad y transparencia.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="content-image rounded-circle mx-auto" style="background-image: url('https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'); height: 200px; width: 200px;"></div>
+                    <h5 class="mt-3">Pastor Juan Pérez</h5>
+                    <p>Superintendente Distrital</p>
+                </div>
+                
+                <div class="col-md-4 text-center mb-4">
+                    <div class="content-image rounded-circle mx-auto" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'); height: 200px; width: 200px;"></div>
+                    <h5 class="mt-3">Pastora María González</h5>
+                    <p>Secretaria Distrital</p>
+                </div>
+                
+                <div class="col-md-4 text-center mb-4">
+                    <div class="content-image rounded-circle mx-auto" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'); height: 200px; width: 200px;"></div>
+                    <h5 class="mt-3">Pastor Carlos Rodríguez</h5>
+                    <p>Tesorero Distrital</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nuestro propósito -->
+    <div id="proposito-page" class="content-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver al Inicio
+            </button>
+            
+            <h1 class="section-title">Nuestro Propósito</h1>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-image" style="background-image: url('https://images.unsplash.com/photo-1518834103328-5d0b5c4c6d6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-text">
+                        <h3>Misión y Visión</h3>
+                        <p>Nuestro propósito como Iglesia del Nazareno es hacer discípulos semejantes a Cristo en las naciones. Esta es la esencia de nuestra misión y el corazón de nuestro ministerio.</p>
+                        
+                        <h5 class="mt-4">Nuestra Misión</h5>
+                        <p>La misión de la Iglesia del Nazareno es "hacer discípulos semejantes a Cristo en las naciones" (Mateo 28:19-20). Esto implica proclamar el evangelio de salvación y santidad bíblica a todas las personas, integrarlas en comunidades de fe, formarlas espiritualmente y capacitarlas para el servicio cristiano.</p>
+                        
+                        <h5 class="mt-4">Nuestra Visión</h5>
+                        <p>Ser una comunidad global de santidad, unida en la tradición wesleyana, que refleje el carácter de Cristo en el mundo. Una iglesia interconectada y multicultural, comprometida con la adoración significativa, el discipulado intencional, la compasión activa y la expansión del Reino de Dios en todas las naciones.</p>
+                        
+                        <h5 class="mt-4">Nuestro Compromiso</h5>
+                        <p>Estamos comprometidos con la santidad bíblica, la evangelización mundial y el discipulado transformador.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="content-text">
+                        <h3>Nuestros Objetivos Estratégicos</h3>
+                        <p>Los objetivos estratégicos de la Iglesia del Nazareno son: evangelizar globalmente haciendo discípulos; promover la santificación y crecimiento espiritual; formar líderes transformacionales; ejercer compasión y justicia; fomentar unidad y comunión; fortalecer educación y discipulado; y expandir mediante la plantación de iglesias.</p>
+                        
+                        <h5 class="mt-4">1. Evangelización Global:</h5>
+                        <p>Predicar el evangelio a toda criatura y hacer discípulos en todas las naciones..</p>
+                        
+                        <h5 class="mt-4">2. Santificación y Crecimiento Espiritual:</h5>
+                        <p>Promover la entera santificación de los creyentes y su edificación en la santidad.</p>
+                        
+                        <h5 class="mt-4">3. Formación de Líderes:</h5>
+                        <p>Desarrollar liderazgo transformacional y capacitación ministerial.</p>
+
+                        <h5 class="mt-4">4. Compasión y Justicia:</h5>
+                        <p>Mostrar compasión con propósito y trabajar por la justicia social.</p>
+
+                        <h5 class="mt-4">5. Unidad y Comunión:</h5>
+                        <p>Demostrar el amor de Cristo mediante ministerios de misericordia, justicia social y cuidado integral a los necesitados, marginados y vulnerables.</p>
+
+                        <h5 class="mt-4">6. Educación y Discipulado:</h5>
+                        <p>Fortalecer la educación cristiana y el discipulado intencional en todas las edades.</p>
+
+                        <h5 class="mt-4">7. Expansión y Plantación de Iglesias:</h5>
+                        <p>Desarrollar y organizar nuevas congregaciones y misiones.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-image" style="background-image: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nuestros valores -->
+    <div id="valores-page" class="content-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver al Inicio
+            </button>
+            
+            <h1 class="section-title">Nuestros Valores</h1>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-image" style="background-image: url('image/para-definir-imagen.jpg');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-text">
+                        <h3>Principios Fundamentales</h3>
+                        <p>Nuestros valores definen quienes somos y cómo servimos. Son los principios que guían cada aspecto de nuestro ministerio.</p>
+                        
+                        <h5 class="mt-4">Cristocéntricos</h5>
+                        <p>Todo en nuestra fe, vida y misión se centra en la persona, obra y señorío de Jesucristo. Él es el fundamento de nuestra salvación, el modelo de nuestra santidad, el mensaje de nuestro testimonio y el Señor a quien adoramos. Ser cristocéntricos significa que Cristo es el principio, el camino y el fin de todo lo que somos y hacemos como iglesia.</p>
+                        
+                        <h5 class="mt-4">Bíblicos</h5>
+                        <p>Aceptamos la Santa Biblia como la Palabra de Dios, nuestra regla suprema e infalible de fe, doctrina y conducta. Toda nuestra enseñanza, misión y vida de santidad se fundamenta en la autoridad de las Escrituras, guiada por el Espíritu Santo y entendida dentro de la tradición wesleyana de interpretación.</p>
+                        
+                        <h5 class="mt-4">Misioneros</h5>
+                        <p>Somos un pueblo enviado por Dios, participando activamente en su misión global. Impulsados por el amor de Cristo y la guía del Espíritu Santo, proclamamos el evangelio, servimos con compasión y trabajamos por la justicia, buscando hacer discípulos a Cristo en todas las naciones.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="zone-card text-center">
+                        <i class="bi bi-heart-fill" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                        <h5>Somos un Pueblo Cristiano</h5>
+                        <p>La Iglesia del Nazareno es un pueblo cristiano, unido por la fe en Jesucristo y la herencia wesleyana de santidad. Creemos en el perdón de Dios para todos y que, al ser reconciliados con Él, formamos una comunidad que ama y perdona como Cristo lo hizo.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="zone-card text-center">
+                        <i class="bi bi-people-fill" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h5>Somos un Pueblo de Santidad</h5>
+                        <p>Dios, que es santo, nos llama a vivir en santidad. El Espíritu Santo obra en nosotros una segunda obra de gracia, conocida como entera santificación, que nos limpia del pecado, nos renueva y nos da poder para amar como Cristo. Así, la santidad se vive como una creciente semejanza a Cristo.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="zone-card text-center">
+                        <i class="bi bi-shield-check" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                        <h5>Somos un Pueblo Misional</h5>
+                        <p>Somos un pueblo enviado por Cristo, capacitado por el Espíritu Santo para testificar y edificar su iglesia. Nuestra misión se basa en la adoración, el servicio evangelístico y compasivo al mundo, el discipulado para la madurez cristiana, y la preparación de líderes a través de la educación superior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Páginas para cada Ministerio (12 nuevas páginas) -->
+    
+    <!-- Página de Ministerio: Comunicaciones -->
+    <div id="comunicaciones-page" class="content-page ministry-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver a Ministerios
+            </button>
+            
+            <h1 class="section-title">Ministerio de Comunicaciones</h1>
+            <p class="lead">Comunicando el mensaje del evangelio y las actividades de la iglesia a través de diversos medios.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="ministry-page-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ministry-info-box">
+                        <h5>Propósito del Ministerio</h5>
+                        <p>Utilizar herramientas de comunicación para difundir el mensaje del evangelio y mantener informada a la comunidad de fe.</p>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Áreas de Trabajo</h5>
+                        <ul>
+                            <li>Producción de contenido digital (web, redes sociales)</li>
+                            <li>Producción audiovisual (videos, transmisiones en vivo)</li>
+                            <li>Diseño gráfico y materiales impresos</li>
+                            <li>Relaciones públicas y medios</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Requisitos para Participar</h5>
+                        <p>Habilidades en comunicación, diseño, fotografía, video o interés en aprender. ¡Todos son bienvenidos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Página de Ministerio: Educación Teológica -->
+    <div id="educacion-teologica-page" class="content-page ministry-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver a Ministerios
+            </button>
+            
+            <h1 class="section-title">Educación Teológica -ETED</h1>
+            <p class="lead">Formación bíblica y teológica para líderes y miembros de la iglesia, preparándolos para un ministerio efectivo.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="ministry-page-image" style="background-image: url('https://images.unsplash.com/photo-1518834103328-5d0b5c4c6d6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ministry-info-box">
+                        <h5>Propósito del Ministerio</h5>
+                        <p>Proporcionar formación teológica sólida y accesible para equipar a los creyentes en su caminar con Cristo y su servicio en la iglesia.</p>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Programas Ofrecidos</h5>
+                        <ul>
+                            <li>Cursos bíblicos básicos y avanzados</li>
+                            <li>Seminarios de liderazgo cristiano</li>
+                            <li>Escuela Dominical para todas las edades</li>
+                            <li>Programas de formación ministerial</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="PLANIFICACIÓN DE ETED 2022.DOC" class="btn btn-primary-custom">LOS ESTUDIOS TEOLÓGICOS</a>
+                        </div>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>¿Para quién es?</h5>
+                        <p>Para todos los miembros de la iglesia que deseen crecer en su conocimiento bíblico y prepararse para el servicio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Página de Ministerio: DNI -->
+    <div id="dni-page" class="content-page ministry-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver a Ministerios
+            </button>
+            
+            <h1 class="section-title">DNI - Discipulado Nazareno Internacional</h1>
+            <p class="lead">Cada iglesia local debe establecer una Junta de DNI o un Comité de Educación como parte de la junta de la iglesia, responsable de los ministerios de educación cristiana.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="ministry-page-image" style="background-image: url('https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ministry-info-box">
+                        <h5>Propósito del Ministerio</h5>
+                        <p>El ministerio existe para cumplir la misión central de la iglesia, expresada en el lema: "hacer discípulos semejantes a Cristo en las naciones". Esto se logra a través de un ministerio de educación cristiana integral y estructurado.</p>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Enfoques del Ministerio</h5>
+                        <ul>
+                            <li>EVANGELIZAR: Atraer a las personas (inconversas o alejadas) hacia Cristo y su Iglesia.</li>
+                            <li>INTEGRAR: Recibirlas en la comunidad de fe a través del compañerismo y la enseñanza.</li>
+                            <li>DISCIPULAR: Enseñarles las doctrinas bíblicas y formarlas en el carácter de Cristo para una vida santa.</li>
+                            <li>CAPACITAR: Prepararlas para el servicio en la iglesia y el mundo, completando así el ciclo al convertirlas en discipuladores.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Actividades</h5>
+                        <p>Grupos de estudio, conferencias misioneras, viajes de corto plazo, y proyectos de apoyo a misioneros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Página de Ministerio: JNI -->
+    <div id="jni-page" class="content-page ministry-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver a Ministerios
+            </button>
+            
+            <h1 class="section-title">JNI - Juventud Nazarena Internacional</h1>
+            <p class="lead">Discipulando a la próxima generación para que sean seguidores apasionados de Cristo y agentes de cambio en su mundo.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="ministry-page-image" style="background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ministry-info-box">
+                        <h5>Propósito del Ministerio</h5>
+                        <p>Guiar a los jóvenes hacia una relación transformadora con Cristo y equiparlos para vivir y compartir su fe en su generación.</p>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Actividades Principales</h5>
+                        <ul>
+                            <li>Reuniones juveniles semanales</li>
+                            <li>Campamentos y retiros espirituales</li>
+                            <li>Eventos de evangelización y servicio</li>
+                            <li>Grupos de estudio bíblico</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>¿Para quién es?</h5>
+                        <p>Para adolescentes y jóvenes adultos (13-30 años) que deseen crecer en su fe y conectar con otros jóvenes cristianos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Página de Ministerio: Mujeres -->
+    <div id="mujeres-page" class="content-page ministry-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver a Ministerios
+            </button>
+            
+            <h1 class="section-title">Ministerio de Mujeres- MAM</h1>
+            <p class="lead">Un espacio para que las mujeres de todas las edades crezcan en su fe, se conecten y sirvan juntas.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="ministry-page-image" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ministry-info-box">
+                        <h5>Propósito del Ministerio</h5>
+                        <p>Discipular, equipar y movilizar a las mujeres para que vivan plenamente su propósito en Cristo y sirvan en Su reino.</p>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Actividades y Grupos</h5>
+                        <ul>
+                            <li>Estudios bíblicos para mujeres</li>
+                            <li>Retiros y conferencias femeninas</li>
+                            <li>Grupos de oración y compañerismo</li>
+                            <li>Proyectos de servicio comunitario</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Enfoques Especiales</h5>
+                        <p>Mujeres solteras, madres, profesionales, y mujeres en diferentes etapas de la vida encuentran comunidad y crecimiento aquí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Página de Ministerio: MINI -->
+    <div id="mini-page" class="content-page ministry-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver a Ministerios
+            </button>
+            
+            <h1 class="section-title">MNI - Ministerio Nazareno Internacional</h1>
+            <p class="lead">La MNI local, autorizada por la junta de la iglesia, organiza a la congregación por edades para la obra misionera bajo la supervisión pastoral. Su presidente es elegido por los miembros y forma parte de la junta de la iglesia. El propósito financiero principal es recaudar fondos, destinándolos prioritariamente al Fondo para la Evangelización Mundial, y solo luego a proyectos especiales aprobados, prohibiendo su uso para gastos locales o del distrito.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="ministry-page-image" style="background-image: url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ministry-info-box">
+                        <h5>Propósito del Ministerio</h5>
+                        <p>Mobilizar a la congregación local (organizándola en grupos por edad) para involucrarse activamente en la obra misionera global de la Iglesia del Nazareno.Recaudar y canalizar fondos de manera prioritaria y disciplinada hacia el Fondo para la Evangelización Mundial (FEM), que sustenta el trabajo misionero central de la denominación en todo el mundo.</p>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Actividades Principales</h5>
+                        <ul>
+                            <li>ORGANIZACIÓN Y FORMACIÓN DE GRUPOS MISIONEROS:Formar y mantener organizaciones de MNI dentro de la iglesia local, segmentadas por grupos de edad (niños, jóvenes, adultos), de acuerdo con su constitución global.</li>
+                            <li>EDUCACIÓN Y CONCIENCIACIÓN MISIONERA:Instruir e inspirar a la congregación sobre la obra misionera mundial de la Iglesia del Nazareno.
+                                Fomentar la visión y el compromiso con la evangelización global.</li>
+                            <li>GESTIÓN Y CANALIZACIÓN FINANCIERA: Asegurar que el 100% de los fondos recaudados para "intereses generales" se destinen prioritariamente al pago completo del FEM.   Solo después de cubrir esa meta, promover el apoyo a proyectos misioneros especiales aprobados.</li>
+                            <li>GOBIERNO Y RENDICIÓN DE CUENTAS:Realizar el proceso de nominación y elección del presidente local de MNI.Presentar informes regulares (incluyendo uno anual a la iglesia) sobre las actividades y finanzas del ministerio.
+                                Garantizar la transparencia, evitando que los fondos misioneros se desvíen para gastos locales o de distrito.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Enfoques Clave</h5>
+                        <p>Las actividades de MNI no son principalmente eventos sociales o locales, sino un esfuerzo disciplinado y organizado para educar el corazón misionero de la iglesia y sostener financieramente la expansión del evangelio en todo el mundo, siguiendo estrictamente los canales y prioridades establecidas por la denominación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Página de Ministerio: IGLESIA = NAZARENO -->
+    <div id="iglesia-nazareno-page" class="content-page ministry-page">
+        <div class="container">
+            <button class="btn btn-outline-primary back-button" onclick="showMainPage()">
+                <i class="bi bi-arrow-left me-2"></i>Volver a Ministerios
+            </button>
+            
+            <h1 class="section-title">VID</h1>
+            <p class="lead">Identidad, valores y distintivos teológicos de la Iglesia del Nazareno como movimiento de santidad.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="ministry-page-image" style="background-image: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ministry-info-box">
+                        <h5>Propósito del Ministerio</h5>
+                        <p>Afirmar y celebrar la identidad nazarena, promoviendo nuestros valores distintivos de santidad bíblica y misión global.</p>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Distintivos Nazarenos</h5>
+                        <ul>
+                            <li>Énfasis en la santidad bíblica</li>
+                            <li>Compromiso con la misión global</li>
+                            <li>Formación teológica wesleyana</li>
+                            <li>Comunidad internacional interdependiente</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ministry-info-box">
+                        <h5>Recursos de Identidad</h5>
+                        <p>Materiales sobre historia, doctrina y valores nazarenos para iglesias locales, líderes y miembros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Iglesia del Nazareno</h5>
+                    <p>Distrito El Alto Noroeste</p>
+                    <p>Una misión global: Hacer discípulos semejantes a Cristo en las naciones.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.facebook.com/p/Iglesia-del-Nazareno-Distrito-El-Alto-Noroeste"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-geo-alt"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <div class="footer-links">
+                        <a href="#" onclick="showMainPage()">Inicio</a>
+                        <a href="#" onclick="showContentPage('buscar-iglesia')">Buscar Iglesia</a>
+                        <a href="#" onclick="showContentPage('historia')">Historia</a>
+                        <a href="#" onclick="showContentPage('creemos')">En qué creemos</a>
+                        <a href="#" onclick="showContentPage('proposito')">Nuestro propósito</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255, 255, 255, 0.2);">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">© Copyright 2026 | Iglesia del Nazareno – Distrito El Alto Noroeste</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Distrito El Alto Noroeste</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Datos de las iglesias con información completa
+        const iglesias = [
+            {
+                nombre: "Iglesia del Nazareno Alto Lima",
+                pastor: "Pastor",
+                direccion: "---",
+                zona: "norte",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno bautista Saavedra",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno 16 de Julio",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Nueva Jerusalen",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Rio Seco",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno San Felipe de Sek'e",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Villa Palestina",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno 16 de Febrero",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Progreso",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno German Busch",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+                        {
+                nombre: "Iglesia del Nazareno Mariscal Sucre",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "norte",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Betania",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Fortaleza ",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Mision Huayna Potosi ",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Abanzada Pumamaya",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Avanzada Bajo Milluni",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Avanzada Tacachira",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno Avanzada Pomamaya Alta ",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "norte",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Aposento Alto",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Belen",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+                        {
+                nombre: "Iglesia del Nazareno El Paraiso",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "central",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Filadelfia",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Primero de Mayo ",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Sajama",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno 7 de Septiembre",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno 6 de Junio",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Villa Abaroa",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno Pacajes",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno La Florida",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Villa Natividad",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Luz de Cristo",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenovillaabaroa",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Victoria",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "central",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Sayhuapampa",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "carabuco",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Saanchi",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "carabuco",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Italque",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "carabuco",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Joko Pampa",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "carabuco",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Tilacoca",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "carabuco",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno Achica",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Alto Chijini",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Pocohota",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Senkata",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "sur",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Villa Exaltacion",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Villa Mercedes",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Villa Santiago I",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Villa Santiago II",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Santa Rosa",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Dignidad2",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno 2 de Febrero",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Santa Maria",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Alto Marquirivi",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "sur",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Calata Grande",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "copacabana",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Calata Capurita",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "copacabana",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Isla Suriqui",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "copacabana",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Tiquina",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "copacabana",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Isla del Sol(mision)",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "copacabana",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Corpaputo",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "cordillera",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Pongonhuyo Berenguela",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "cordillera",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno Pongonhuyo Central",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "cordillera",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Jaillihuaya",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "cordillera",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Kerani Central",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "cordillera",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Pariri",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "cordillera",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Penas",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "cordillera",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Turquia",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "cordillera",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Central Calla",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "machaca",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Jesus de Machaca",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "machaca",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Khonkho Loquiliqui",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "machaca",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Suramaya",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "machaca",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno Tacaca",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "machaca",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Yauriri de Machaca",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "machaca",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Nazacara",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "machaca",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+                        {
+                nombre: "Iglesia del Nazareno Antacollo",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "lago",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Kalaque Wichiwichi",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "lago",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Huarina",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "lago",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Jancko Amaya",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "lago",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Samancha",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "lago",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Chipamaya",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "andesI",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Kenakahua",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "andesI",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno Mucuna",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "andesI",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Seguenca",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "andesI",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Huaynapotosi Palcoco",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "andesI",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Lequinoso",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "andesI",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Caleria",
+                pastor: "Pastor David González",
+                direccion: "Calle Esperanza #567, Zona Este",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenoelredentor",
+                instagram: "https://instagram.com/iglesianazarenoelredentor",
+                youtube: "https://youtube.com/iglesianazarenoelredentor",
+                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Khonkho Catavi",
+                pastor: "Pastor Pedro Sánchez",
+                direccion: "Av. Cristiana #890, Zona Norte",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenoemmanuel",
+                instagram: "https://instagram.com/iglesianazarenoemmanuel",
+                youtube: "https://youtube.com/iglesianazarenoemmanuel",
+                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+            },
+            {
+                nombre: "Iglesia del Nazareno Central Copajira",
+                pastor: "Pastora Ana Torres",
+                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenolaroca",
+                instagram: "https://instagram.com/iglesianazarenolaroca",
+                youtube: "https://youtube.com/iglesianazarenolaroca",
+                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+            },
+            {
+                nombre: "Iglesia del Nazareno Huacullani",
+                pastor: "Pastor Miguel Vargas",
+                direccion: "Cerro Monte Sion #222, Zona Este",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenomontesion",
+                instagram: "https://instagram.com/iglesianazarenomontesion",
+                youtube: "https://youtube.com/iglesianazarenomontesion",
+                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+            },
+            {
+                nombre: "Iglesia del Nazareno Cantapa",
+                pastor: "Pastora Laura Méndez",
+                direccion: "Av. Celestial #333, Zona Central",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
+                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
+                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
+                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+            },
+            {
+                nombre: "Iglesia del Nazareno Puchuni",
+                pastor: "Pastor Roberto Castro",
+                direccion: "Calle Refugio #444, Zona Oeste",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
+                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
+                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
+                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+            },
+            {
+                nombre: "Iglesia del Nazareno Santa Rosa de Taraco",
+                pastor: "Pastor Juan Martínez",
+                direccion: "Av. Principal #123, Villa Abaroa",
+                zona: "andesII",
+                facebook: "#",
+                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
+                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
+                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+            },
+            {
+                nombre: "Iglesia del Nazareno Viluyo",
+                pastor: "Pastora María López",
+                direccion: "Calle Paz #456, Zona Belén",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenobelen",
+                instagram: "https://instagram.com/iglesianazarenobelen",
+                youtube: "https://youtube.com/iglesianazarenobelen",
+                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+            },
+            {
+                nombre: "Iglesia del Nazareno Yanamuyo",
+                pastor: "Pastor Carlos Rodríguez",
+                direccion: "Plaza Central #789, Centro",
+                zona: "andesII",
+                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
+                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
+                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
+                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+            },
+            {
+                nombre: "Iglesia del Nazareno Nueva Cobija",
+                pastor: "Pastor José Fernández",
+                direccion: "Av. Libertad #234, Zona Oeste",
+                zona: "cobija/Pando",
+                facebook: "https://facebook.com/iglesianazarenograciadivina",
+                instagram: "https://instagram.com/iglesianazarenograciadivina",
+                youtube: "https://youtube.com/iglesianazarenograciadivina",
+                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+            }
+        ];
+
+        // Inicializar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar el carrusel
+            const myCarousel = new bootstrap.Carousel(document.getElementById('carouselIglesia'), {
+                interval: 5000,
+                wrap: true
+            });
+            
+            // Cargar iglesias por defecto
+            loadChurches();
+        });
+
+        // Cargar las iglesias en la página
+        function loadChurches(filteredIglesias = iglesias) {
+            const container = document.getElementById('iglesias-container');
+            
+            if (filteredIglesias.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-5">
+                        <i class="bi bi-search" style="font-size: 3rem; color: #ccc; margin-bottom: 1rem;"></i>
+                        <h4>No se encontraron iglesias</h4>
+                        <p>No hay iglesias que coincidan con los filtros seleccionados.</p>
+                        <button class="btn btn-primary-custom mt-3" onclick="resetFilters()">
+                            Ver todas las iglesias
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '';
+            
+            filteredIglesias.forEach((iglesia, index) => {
+                html += `
+                    <div class="church-card fade-in">
+                        <h4>${iglesia.nombre}</h4>
+                        <div class="church-pastor">
+                            <i class="bi bi-person-circle"></i> ${iglesia.pastor}
+                        </div>
+                        <div class="church-location">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <strong>Dirección:</strong> ${iglesia.direccion}
+                            </div>
+                        </div>
+                        <div class="social-icons-sm">
+                            <a href="${iglesia.facebook}" target="_blank" class="social-icon facebook-icon" title="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="${iglesia.instagram}" target="_blank" class="social-icon instagram-icon" title="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="${iglesia.youtube}" target="_blank" class="social-icon youtube-icon" title="YouTube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="${iglesia.maps}" target="_blank" class="social-icon location-icon" title="Ver en Google Maps">
+                                <i class="bi bi-geo-alt"></i>
+                            </a>
+                        </div>
+                        <div class="mt-3">
+                            <span class="badge bg-primary">${getZonaName(iglesia.zona)}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        // Obtener el nombre de la zona
+        function getZonaName(zonaCode) {
+            const zonas = {
+                "norte": "Zona Norte",
+                "sur": "Zona Sur",
+                "este": "Zona Este",
+                "oeste": "Zona Oeste",
+                "central": "Zona Central"
+            };
+            return zonas[zonaCode] || zonaCode;
+        }
+
+        // Filtrar iglesias según los criterios seleccionados
+        function filterChurches() {
+            const zonaSelect = document.getElementById('zonaSelect');
+            const nombreInput = document.getElementById('nombreIglesia');
+            
+            const zonaSeleccionada = zonaSelect.value;
+            const nombreBusqueda = nombreInput.value.toLowerCase();
+            
+            let filtered = iglesias;
+            
+            // Filtrar por zona
+            if (zonaSeleccionada !== 'todas') {
+                filtered = filtered.filter(iglesia => iglesia.zona === zonaSeleccionada);
+            }
+            
+            // Filtrar por nombre
+            if (nombreBusqueda.trim() !== '') {
+                filtered = filtered.filter(iglesia => 
+                    iglesia.nombre.toLowerCase().includes(nombreBusqueda) ||
+                    iglesia.pastor.toLowerCase().includes(nombreBusqueda)
+                );
+            }
+            
+            loadChurches(filtered);
+        }
+
+        // Restablecer filtros
+        function resetFilters() {
+            document.getElementById('zonaSelect').value = 'todas';
+            document.getElementById('nombreIglesia').value = '';
+            loadChurches(iglesias);
+        }
+
+        // Mostrar la página principal
+        function showMainPage() {
+            document.body.classList.remove('show-content');
+            document.getElementById('main-page').style.display = 'block';
+            
+            // Ocultar todas las páginas de contenido
+            document.querySelectorAll('.content-page').forEach(page => {
+                page.classList.remove('active');
+                page.style.display = 'none';
+            });
+            
+            // Desplazar al inicio
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Mostrar una página de contenido específica
+        function showContentPage(pageId) {
+            // Ocultar la página principal
+            document.getElementById('main-page').style.display = 'none';
+            
+            // Ocultar todas las páginas de contenido
+            document.querySelectorAll('.content-page').forEach(page => {
+                page.classList.remove('active');
+                page.style.display = 'none';
+            });
+            
+            // Mostrar la página solicitada
+            const page = document.getElementById(`${pageId}-page`);
+            if (page) {
+                page.classList.add('active');
+                page.style.display = 'block';
+                document.body.classList.add('show-content');
+                
+                // Si es la página de buscar iglesia, cargar las iglesias
+                if (pageId === 'buscar-iglesia') {
+                    loadChurches();
+                }
+                
+                // Desplazar al inicio de la página
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        }
+
+        // Mostrar página específica de ministerio
+        function showMinistryPage(ministryId) {
+            // Ocultar la página principal
+            document.getElementById('main-page').style.display = 'none';
+            
+            // Ocultar todas las páginas de contenido
+            document.querySelectorAll('.content-page').forEach(page => {
+                page.classList.remove('active');
+                page.style.display = 'none';
+            });
+            
+            // Mostrar la página del ministerio solicitado
+            const page = document.getElementById(`${ministryId}-page`);
+            if (page) {
+                page.classList.add('active');
+                page.style.display = 'block';
+                document.body.classList.add('show-content');
+                
+                // Desplazar al inicio de la página
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            } else {
+                // Si no existe la página específica, mostrar la página principal de ministerios
+                showMainPage();
+                setTimeout(() => document.getElementById('ministerios').scrollIntoView({behavior: 'smooth'}), 100);
+            }
+        }
+
+        // Navegación suave para enlaces internos
+        document.querySelectorAll('.main-section a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
