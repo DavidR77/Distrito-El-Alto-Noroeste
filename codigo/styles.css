@@ -80,6 +80,9 @@
             background-position: center;
             position: relative;
             overflow: hidden;
+            --carousel-overlay-left: 0.52;
+            --carousel-overlay-mid: 0.28;
+            --carousel-overlay-right: 0.12;
         }
 
         .carousel-bg {
@@ -99,28 +102,34 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(90deg, rgba(26, 54, 93, 0.25) 0%, rgba(26, 54, 93, 0.12) 55%, rgba(26, 54, 93, 0.05) 100%);
+            background: linear-gradient(90deg, rgba(26, 54, 93, var(--carousel-overlay-left)) 0%, rgba(26, 54, 93, var(--carousel-overlay-mid)) 55%, rgba(26, 54, 93, var(--carousel-overlay-right)) 100%);
             pointer-events: none;
             z-index: 2;
         }
         
         .carousel-caption {
-            background: rgba(26, 54, 93, 0.85);
+            background: rgba(18, 44, 84, 0.9);
             padding: 2.5rem;
             border-radius: 10px;
             max-width: 800px;
             margin: 0 auto;
             bottom: 15%;
             z-index: 3;
+            box-shadow: 0 18px 55px rgba(0, 0, 0, 0.28);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
         }
         
         .carousel-caption h2 {
             font-size: 2.8rem;
             margin-bottom: 1rem;
+            text-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
         }
         
         .carousel-caption p {
             font-size: 1.2rem;
+            text-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
         }
         
         .carousel-control-prev, .carousel-control-next {
