@@ -2,7 +2,6 @@
         const iglesias = [
             {
                 nombre: "Iglesia del Nazareno Alto Lima",
-                pastor: "Pastor",
                 direccion: "---",
                 zona: "norte",
                 facebook: "#",
@@ -12,7 +11,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno bautista Saavedra",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -22,7 +20,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno 16 de Julio",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -32,7 +29,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Nueva Jerusalen",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -42,7 +38,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Rio Seco",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -52,7 +47,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno San Felipe de Sek'e",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -62,7 +56,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Villa Palestina",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -72,7 +65,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno 16 de Febrero",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -82,7 +74,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Progreso",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -92,7 +83,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno German Busch",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -102,7 +92,6 @@
             },
                         {
                 nombre: "Iglesia del Nazareno Mariscal Sucre",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "norte",
                 facebook: "#",
@@ -112,7 +101,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Betania",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -122,7 +110,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Fortaleza ",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -132,7 +119,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Mision Huayna Potosi ",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -142,7 +128,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Abanzada Pumamaya",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -152,7 +137,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Avanzada Bajo Milluni",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -162,7 +146,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Avanzada Tacachira",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -172,7 +155,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Avanzada Pomamaya Alta ",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "norte",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -182,7 +164,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Aposento Alto",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -192,7 +173,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Belen",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -202,7 +182,6 @@
             },
                         {
                 nombre: "Iglesia del Nazareno El Paraiso",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "central",
                 facebook: "#",
@@ -212,7 +191,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Filadelfia",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -222,7 +200,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Primero de Mayo ",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -232,7 +209,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Sajama",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -242,7 +218,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno 7 de Septiembre",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -252,7 +227,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno 6 de Junio",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -262,7 +236,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Villa Abaroa",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -272,7 +245,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Pacajes",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -282,7 +254,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno La Florida",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -292,7 +263,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Villa Natividad",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -302,7 +272,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Luz de Cristo",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenovillaabaroa",
@@ -312,7 +281,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Victoria",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "central",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -322,7 +290,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Sayhuapampa",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "carabuco",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -332,7 +299,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Saanchi",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "carabuco",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -342,7 +308,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Italque",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "carabuco",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -352,7 +317,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Joko Pampa",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "carabuco",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -362,7 +326,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Tilacoca",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "carabuco",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -372,7 +335,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Achica",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -382,7 +344,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Alto Chijini",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -392,7 +353,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Pocohota",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -402,7 +362,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Senkata",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "sur",
                 facebook: "#",
@@ -412,7 +371,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Villa Exaltacion",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -422,7 +380,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Villa Mercedes",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -432,7 +389,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Villa Santiago I",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -442,7 +398,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Villa Santiago II",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -452,7 +407,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Santa Rosa",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -462,7 +416,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Dignidad2",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -472,7 +425,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno 2 de Febrero",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -482,7 +434,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Santa Maria",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -492,7 +443,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Alto Marquirivi",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "sur",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -502,7 +452,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Calata Grande",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "copacabana",
                 facebook: "#",
@@ -512,7 +461,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Calata Capurita",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "copacabana",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -522,7 +470,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Isla Suriqui",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "copacabana",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -532,7 +479,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Tiquina",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "copacabana",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -542,7 +488,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Isla del Sol(mision)",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "copacabana",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -552,7 +497,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Corpaputo",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "cordillera",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -562,7 +506,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Pongonhuyo Berenguela",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "cordillera",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -572,7 +515,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Pongonhuyo Central",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "cordillera",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -582,7 +524,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Jaillihuaya",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "cordillera",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -592,7 +533,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Kerani Central",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "cordillera",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -602,7 +542,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Pariri",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "cordillera",
                 facebook: "#",
@@ -612,7 +551,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Penas",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "cordillera",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -622,7 +560,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Turquia",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "cordillera",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -632,7 +569,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Central Calla",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "machaca",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -642,7 +578,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Jesus de Machaca",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "machaca",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -652,7 +587,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Khonkho Loquiliqui",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "machaca",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -662,7 +596,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Suramaya",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "machaca",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -672,7 +605,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Tacaca",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "machaca",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -682,7 +614,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Yauriri de Machaca",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "machaca",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -692,7 +623,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Nazacara",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "machaca",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -702,7 +632,6 @@
             },
                         {
                 nombre: "Iglesia del Nazareno Antacollo",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "lago",
                 facebook: "#",
@@ -712,7 +641,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Kalaque Wichiwichi",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "lago",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -722,7 +650,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Huarina",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "lago",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -732,7 +659,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Jancko Amaya",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "lago",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -742,7 +668,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Samancha",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "lago",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -752,7 +677,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Chipamaya",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "andesI",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -762,7 +686,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Kenakahua",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "andesI",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -772,7 +695,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Mucuna",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "andesI",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -782,7 +704,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Seguenca",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "andesI",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -792,7 +713,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Huaynapotosi Palcoco",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "andesI",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -802,7 +722,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Lequinoso",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "andesI",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -812,7 +731,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Caleria",
-                pastor: "Pastor David González",
                 direccion: "Calle Esperanza #567, Zona Este",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenoelredentor",
@@ -822,7 +740,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Khonkho Catavi",
-                pastor: "Pastor Pedro Sánchez",
                 direccion: "Av. Cristiana #890, Zona Norte",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenoemmanuel",
@@ -832,7 +749,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Central Copajira",
-                pastor: "Pastora Ana Torres",
                 direccion: "Calle Roca Fuerte #111, Zona Sur",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenolaroca",
@@ -842,7 +758,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Huacullani",
-                pastor: "Pastor Miguel Vargas",
                 direccion: "Cerro Monte Sion #222, Zona Este",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenomontesion",
@@ -852,7 +767,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Cantapa",
-                pastor: "Pastora Laura Méndez",
                 direccion: "Av. Celestial #333, Zona Central",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
@@ -862,7 +776,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Puchuni",
-                pastor: "Pastor Roberto Castro",
                 direccion: "Calle Refugio #444, Zona Oeste",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenorefugioeterno",
@@ -872,7 +785,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Santa Rosa de Taraco",
-                pastor: "Pastor Juan Martínez",
                 direccion: "Av. Principal #123, Villa Abaroa",
                 zona: "andesII",
                 facebook: "#",
@@ -882,7 +794,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Viluyo",
-                pastor: "Pastora María López",
                 direccion: "Calle Paz #456, Zona Belén",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenobelen",
@@ -892,7 +803,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Yanamuyo",
-                pastor: "Pastor Carlos Rodríguez",
                 direccion: "Plaza Central #789, Centro",
                 zona: "andesII",
                 facebook: "https://facebook.com/iglesianazarenofeyesperanza",
@@ -902,7 +812,6 @@
             },
             {
                 nombre: "Iglesia del Nazareno Nueva Cobija",
-                pastor: "Pastor José Fernández",
                 direccion: "Av. Libertad #234, Zona Oeste",
                 zona: "cobija/Pando",
                 facebook: "https://facebook.com/iglesianazarenograciadivina",
@@ -985,9 +894,6 @@
                 html += `
                     <div class="church-card fade-in">
                         <h4>${iglesia.nombre}</h4>
-                        <div class="church-pastor">
-                            <i class="bi bi-person-circle"></i> ${iglesia.pastor}
-                        </div>
                         <div class="church-location">
                             <i class="bi bi-geo-alt"></i>
                             <div>
@@ -1234,97 +1140,406 @@
             });
         });
 
+        // Datos de eventos del calendario con fechas reales
+        const calendarEvents = [
+            // MARZO 2026
+            {
+                id: 'retiro-lideres-jni-1',
+                titulo: 'Retiro Distrital de Líderes de JNI',
+                fecha: new Date('2026-03-14'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Retiro especial para líderes de Jóvenes de Nazareno Internacional. Tiempo de capacitación, comunión y estrategia.'
+            },
+            {
+                id: 'retiro-lideres-jni-2',
+                titulo: 'Retiro Distrital de Líderes de JNI',
+                fecha: new Date('2026-03-15'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Segundo día del retiro de líderes JNI. Clausura y compromisos para el año.'
+            },
+            {
+                id: 'retiro-distrital-1',
+                titulo: 'Retiro Distrital',
+                fecha: new Date('2026-03-28'),
+                hora: 'Todo el día',
+                lugar: 'Centro de Retiros',
+                descripcion: 'Retiro espiritual para toda la congregación. Tiempo de avivamiento y renovación.'
+            },
+            {
+                id: 'retiro-distrital-2',
+                titulo: 'Retiro Distrital',
+                fecha: new Date('2026-03-29'),
+                hora: 'Todo el día',
+                lugar: 'Centro de Retiros',
+                descripcion: 'Segundo día del retiro distrital con culto de clausura.'
+            },
+            // ABRIL 2026
+            {
+                id: 'semana-santa-1',
+                titulo: 'Campaña Zonal de Semana Santa',
+                fecha: new Date('2026-04-04'),
+                hora: 'Todo el día',
+                lugar: 'Todas las Zonas',
+                descripcion: 'Campaña evangelística zonal durante el fin de semana de Semana Santa.'
+            },
+            {
+                id: 'semana-santa-2',
+                titulo: 'Campaña Zonal de Semana Santa',
+                fecha: new Date('2026-04-05'),
+                hora: 'Todo el día',
+                lugar: 'Todas las Zonas',
+                descripcion: 'Segundo día de la campaña evangelística de Semana Santa.'
+            },
+            {
+                id: 'ayuno-oracion-1',
+                titulo: '40 Días Ayuno y Oración',
+                fecha: new Date('2026-04-15'),
+                hora: 'Todo el día',
+                lugar: 'Templo Central',
+                descripcion: 'Inicio de los 40 días de ayuno y oración. Culto especial de convocatoria.'
+            },
+            {
+                id: 'ayuno-oracion-2',
+                titulo: '40 Días Ayuno y Oración',
+                fecha: new Date('2026-04-16'),
+                hora: 'Todo el día',
+                lugar: 'Templo Central',
+                descripcion: 'Continuación de los 40 días de ayuno y oración.'
+            },
+            {
+                id: 'campamento-ninos-1',
+                titulo: 'Campamento Zonal de Niños',
+                fecha: new Date('2026-04-17'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Campamento especial para niños de todas las iglesias de la zona.'
+            },
+            {
+                id: 'campamento-ninos-2',
+                titulo: 'Campamento Zonal de Niños',
+                fecha: new Date('2026-04-18'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Segundo día del campamento zonal de niños.'
+            },
+            {
+                id: 'campamento-ninos-3',
+                titulo: 'Campamento Zonal de Niños',
+                fecha: new Date('2026-04-19'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Último día del campamento zonal de niños. Clausura y entrega de reconocimientos.'
+            },
+            {
+                id: 'reunion-pastores-abril',
+                titulo: 'Reunión Distrital de Pastores',
+                fecha: new Date('2026-04-24'),
+                hora: '15:00 - 17:00',
+                lugar: 'Sala de Conferencias',
+                descripcion: 'Reunión mensual de pastores para coordinar actividades y fortalecer el trabajo ministerial.'
+            },
+            {
+                id: 'taller-liderazgo-1',
+                titulo: 'Taller de Liderazgo (Señor de la Gracia)',
+                fecha: new Date('2026-04-25'),
+                hora: '09:00 - 13:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Taller de formación en liderazgo con enfoque en el carácter del líder cristiano.'
+            },
+            {
+                id: 'taller-liderazgo-2',
+                titulo: 'Taller de Liderazgo (Señor de la Gracia)',
+                fecha: new Date('2026-04-26'),
+                hora: '10:00 - 12:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Segundo día del taller de liderazgo. Prácticas y aplicaciones.'
+            },
+            // MAYO 2026
+            {
+                id: 'aniversario-potosi-1',
+                titulo: 'Aniversario Misión Potosí',
+                fecha: new Date('2026-05-09'),
+                hora: 'Todo el día',
+                lugar: 'Iglesia Misión Potosí',
+                descripcion: 'Celebración del aniversario de la Iglesia Misión Potosí. Culto especial y convivencia.'
+            },
+            {
+                id: 'aniversario-potosi-2',
+                titulo: 'Aniversario Misión Potosí',
+                fecha: new Date('2026-05-10'),
+                hora: 'Todo el día',
+                lugar: 'Iglesia Misión Potosí',
+                descripcion: 'Segundo día de celebración del aniversario con actividades familiares.'
+            },
+            {
+                id: 'actualizacion-pastoral',
+                titulo: 'Actualización Pastoral',
+                fecha: new Date('2026-05-13'),
+                hora: '09:00 - 14:00',
+                lugar: 'Centro de Capacitación',
+                descripcion: 'Jornada de actualización y capacitación para el equipo pastoral del distrito.'
+            },
+            {
+                id: 'revision-cajas',
+                titulo: 'Revisión Cajas Área Rural',
+                fecha: new Date('2026-05-17'),
+                hora: '09:00 - 12:00',
+                lugar: 'Oficina Distrital',
+                descripcion: 'Revisión administrativa de las cajas de las iglesias del área rural.'
+            },
+            {
+                id: 'cierre-ayuno',
+                titulo: 'Cierre de 40 Días de Ayuno y Oración',
+                fecha: new Date('2026-05-20'),
+                hora: '19:00 - 21:00',
+                lugar: 'Templo Central',
+                descripcion: 'Culto especial de cierre de los 40 días de ayuno y oración. Celebración y gratitud.'
+            },
+            {
+                id: 'campamento-plenitud-1',
+                titulo: 'Campamento Distrital de Plenitud de Vida',
+                fecha: new Date('2026-05-30'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Campamento para adultos sobre vida abundante en Cristo.'
+            },
+            {
+                id: 'campamento-plenitud-2',
+                titulo: 'Campamento Distrital de Plenitud de Vida',
+                fecha: new Date('2026-05-31'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Segundo día del campamento de plenitud de vida. Cierre con culto especial.'
+            },
+            // JUNIO 2026
+            {
+                id: 'reunion-pastores-junio',
+                titulo: 'Reunión Distrital de Pastores',
+                fecha: new Date('2026-06-23'),
+                hora: '15:00 - 17:00',
+                lugar: 'Sala de Conferencias',
+                descripcion: 'Reunión mensual de pastores para coordinar actividades del mes de julio.'
+            },
+            // JULIO 2026
+            {
+                id: 'congreso-jni-1',
+                titulo: 'Congreso Distrital JNI',
+                fecha: new Date('2026-07-18'),
+                hora: 'Todo el día',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Congreso anual de Jóvenes de Nazareno Internacional del distrito. Adoración, enseñanza y comunión.'
+            },
+            {
+                id: 'congreso-jni-2',
+                titulo: 'Congreso Distrital JNI',
+                fecha: new Date('2026-07-19'),
+                hora: 'Todo el día',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Segundo día del Congreso Distrital JNI con culto de clausura y premiaciones.'
+            },
+            // AGOSTO 2026
+            {
+                id: 'encuentro-matrimonios-1',
+                titulo: 'Encuentro Distrital de Matrimonios',
+                fecha: new Date('2026-08-15'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Encuentro especial para matrimonios del distrito. Talleres, conferencias y tiempo de comunión para fortalecer los hogares cristianos.'
+            },
+            {
+                id: 'encuentro-matrimonios-2',
+                titulo: 'Encuentro Distrital de Matrimonios',
+                fecha: new Date('2026-08-16'),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Segundo día del encuentro de matrimonios con culto de clausura y celebración.'
+            },
+            // SEPTIEMBRE 2026
+            {
+                id: 'retiro-damas-1',
+                titulo: 'Retiro Distrital de Damas',
+                fecha: new Date('2026-09-19'),
+                hora: 'Todo el día',
+                lugar: 'Centro de Retiros',
+                descripcion: 'Retiro espiritual para damas del distrito. Tiempo de edificación, oración y renovación espiritual.'
+            },
+            {
+                id: 'retiro-damas-2',
+                titulo: 'Retiro Distrital de Damas',
+                fecha: new Date('2026-09-20'),
+                hora: 'Todo el día',
+                lugar: 'Centro de Retiros',
+                descripcion: 'Segundo día del retiro de damas con clausura y compromisos de servicio.'
+            },
+            // OCTUBRE 2026
+            {
+                id: 'aniversario-distrital-1',
+                titulo: 'Aniversario Distrital',
+                fecha: new Date('2026-10-10'),
+                hora: 'Todo el día',
+                lugar: 'Templo Central',
+                descripcion: 'Celebración del aniversario del Distrito El Alto Noroeste. Culto especial, reconocimientos y convivencia.'
+            },
+            {
+                id: 'aniversario-distrital-2',
+                titulo: 'Aniversario Distrital',
+                fecha: new Date('2026-10-11'),
+                hora: 'Todo el día',
+                lugar: 'Templo Central',
+                descripcion: 'Segundo día de celebración del aniversario distrital con actividades para toda la familia.'
+            },
+            {
+                id: 'reunion-pastores-octubre',
+                titulo: 'Reunión Distrital de Pastores',
+                fecha: new Date('2026-10-23'),
+                hora: '15:00 - 17:00',
+                lugar: 'Sala de Conferencias',
+                descripcion: 'Reunión mensual de pastores para coordinar actividades y planificar el cierre del año.'
+            },
+            // NOVIEMBRE 2026
+            {
+                id: 'congreso-mni-1',
+                titulo: 'Congreso Distrital de MNI',
+                fecha: new Date('2026-11-14'),
+                hora: 'Todo el día',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Congreso anual de Misión Nazareno Internacional (MNI) del distrito. Para niños de todas las iglesias.'
+            },
+            {
+                id: 'congreso-mni-2',
+                titulo: 'Congreso Distrital de MNI',
+                fecha: new Date('2026-11-15'),
+                hora: 'Todo el día',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Segundo día del Congreso Distrital MNI con culto de clausura y premiaciones.'
+            },
+            // DICIEMBRE 2026
+            {
+                id: 'sesion-anual-1',
+                titulo: 'Sesión Anual',
+                fecha: new Date('2026-12-05'),
+                hora: '09:00 - 14:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Sesión anual del distrito para informes, elecciones y planificación del próximo año.'
+            },
+            {
+                id: 'seminario-liderazgo-dic',
+                titulo: 'Seminario de Liderazgo',
+                fecha: new Date('2026-12-12'),
+                hora: '09:00 - 13:00',
+                lugar: 'Centro de Capacitación',
+                descripcion: 'Seminario especial de liderazgo para preparar líderes para el año siguiente.'
+            },
+            {
+                id: 'sesion-anual-2',
+                titulo: 'Sesión Anual',
+                fecha: new Date('2026-12-13'),
+                hora: '10:00 - 12:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Segunda sesión anual para cierre de actividades y bendición apostólica.'
+            },
+            {
+                id: 'culto-navidad',
+                titulo: 'Culto de Navidad',
+                fecha: new Date('2026-12-19'),
+                hora: '19:00 - 21:00',
+                lugar: 'Templo Central',
+                descripcion: 'Culto especial de celebración del nacimiento de Jesús. Programa navideño con coros y drama.'
+            }
+        ];
+
         // Función para mostrar detalles de eventos del calendario
         function showEventDetail(eventId) {
-            const eventos = {
-                'conferencia-jovenes': {
-                    titulo: 'Conferencia de Jóvenes',
-                    fecha: '15 de Febrero, 2026',
-                    hora: '09:00 - 18:00',
-                    lugar: 'Auditorio Principal',
-                    descripcion: 'Un día lleno de adoración, enseñanza y compañerismo para jóvenes de todas las iglesias del distrito. Talleres, música en vivo y concursos.'
-                },
-                'reunion-pastores': {
-                    titulo: 'Reunión de Pastores',
-                    fecha: '22 de Febrero, 2026',
-                    hora: '15:00 - 17:00',
-                    lugar: 'Sala de Conferencias',
-                    descripcion: 'Reunión mensual de pastores para coordinar actividades, compartir visiones y fortalecer el trabajo ministerial del distrito.'
-                },
-                'taller-mujeres': {
-                    titulo: 'Taller de Mujeres',
-                    fecha: '28 de Febrero, 2026',
-                    hora: '14:00 - 17:00',
-                    lugar: 'Salón Multiusos',
-                    descripcion: 'Taller de capacitación y edificación para mujeres, con temas de desarrollo personal, espiritualidad y servicio a la comunidad.'
-                },
-                'campamento-infantil': {
-                    titulo: 'Campamento Infantil',
-                    fecha: '8 de Marzo, 2026',
-                    hora: '08:00 - 17:00',
-                    lugar: 'Zona Recreativa',
-                    descripcion: 'Un día especial para los niños con juegos, dinámicas, enseñanzas bíblicas y mucha diversión. Edades 5-12 años.'
-                },
-                'taller-liderazgo': {
-                    titulo: 'Taller de Liderazgo',
-                    fecha: '15 de Marzo, 2026',
-                    hora: '09:00 - 13:00',
-                    lugar: 'Auditorio Principal',
-                    descripcion: 'Formación para líderes de células, ministerios y obreos. Temas: liderazgo servicial, discipulado efectivo y gestión de equipos.'
-                },
-                'culto-oracion': {
-                    titulo: 'Culto de Oración',
-                    fecha: '22 de Marzo, 2026',
-                    hora: '19:00 - 21:00',
-                    lugar: 'Templo Central',
-                    descripcion: 'Noche de oración y avivamiento. Un tiempo para buscar la presencia de Dios, interceder por las necesidades y fortalecer la vida espiritual.'
-                },
-                'seminario-teologico': {
-                    titulo: 'Seminario Teológico',
-                    fecha: '5 de Abril, 2026',
-                    hora: '08:30 - 16:30',
-                    lugar: 'Centro de Capacitación',
-                    descripcion: 'Seminario intensivo sobre doctrina nazarena, historia de la iglesia y herramientas para el estudio bíblico. Certificación disponible.'
-                },
-                'culto-avivamiento': {
-                    titulo: 'Culto de Avivamiento',
-                    fecha: '12 de Abril, 2026',
-                    hora: '19:00 - 21:30',
-                    lugar: 'Templo Central',
-                    descripcion: 'Culto especial de avivamiento con predicación expositiva, adoración congregacional y tiempo de ministerio personal.'
-                },
-                'domingo-ramos': {
-                    titulo: 'Domingo de Ramos',
-                    fecha: '13 de Abril, 2026',
-                    hora: '10:00 - 12:00',
-                    lugar: 'Todas las Iglesias',
-                    descripcion: 'Celebración del inicio de la Semana Santa. Procesión con palmas, culto especial y enfoque en la entrada triunfal de Jesús.'
-                },
-                'asamblea-distrital': {
-                    titulo: 'Asamblea Distrital',
-                    fecha: '3 de Mayo, 2026',
-                    hora: '09:00 - 14:00',
-                    lugar: 'Auditorio Principal',
-                    descripcion: 'Asamblea general del distrito para informes ministeriales, aprobación de presupuesto y planificación de actividades anuales.'
-                },
-                'feria-ministerios': {
-                    titulo: 'Feria de Ministerios',
-                    fecha: '10 de Mayo, 2026',
-                    hora: '10:00 - 16:00',
-                    lugar: 'Plaza Central',
-                    descripcion: 'Exposición de los diferentes ministerios del distrito. Oportunidad para conocer, inscribirse y servir en las áreas de tu interés.'
-                },
-                'dia-madre': {
-                    titulo: 'Celebración Día de la Madre',
-                    fecha: '11 de Mayo, 2026',
-                    hora: '10:00 - 13:00',
-                    lugar: 'Templo Central',
-                    descripcion: 'Culto especial en honor a las madres. Reconocimiento, obsequios, almuerzo comunitario y tiempo de bendición para las mamás.'
-                }
-            };
-
-            const evento = eventos[eventId];
+            const evento = calendarEvents.find(e => e.id === eventId);
             if (evento) {
-                alert(`📅 ${evento.titulo}\n\n📆 Fecha: ${evento.fecha}\n🕐 Hora: ${evento.hora}\n📍 Lugar: ${evento.lugar}\n\n📝 ${evento.descripcion}`);
+                const fechaFormateada = evento.fecha.toLocaleDateString('es-ES', { 
+                    weekday: 'long', 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                });
+                alert(`📅 ${evento.titulo}\n\n📆 Fecha: ${fechaFormateada}\n🕐 Hora: ${evento.hora}\n📍 Lugar: ${evento.lugar}\n\n📝 ${evento.descripcion}`);
             }
         }
+
+        // Función para renderizar el calendario ordenado cronológicamente
+        function renderCalendar() {
+            const container = document.getElementById('calendar-events-container');
+            if (!container) return;
+
+            const hoy = new Date();
+            hoy.setHours(0, 0, 0, 0);
+
+            // Ordenar eventos por fecha
+            const eventosOrdenados = [...calendarEvents].sort((a, b) => a.fecha - b.fecha);
+
+            // Filtrar solo eventos futuros (o mostrar todos si no hay futuros)
+            let eventosFuturos = eventosOrdenados.filter(e => e.fecha >= hoy);
+            if (eventosFuturos.length === 0) {
+                eventosFuturos = eventosOrdenados.slice(-4); // Mostrar últimos 4 si no hay futuros
+            }
+
+            // Mostrar máximo 4 eventos próximos
+            const eventosAMostrar = eventosFuturos.slice(0, 4);
+
+            // Encontrar el próximo evento
+            const proximoEvento = eventosFuturos[0];
+
+            let html = '';
+            eventosAMostrar.forEach((evento, index) => {
+                const esProximo = proximoEvento && evento.id === proximoEvento.id;
+                const fechaStr = evento.fecha.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
+                const mesStr = evento.fecha.toLocaleDateString('es-ES', { month: 'long' });
+                const diaSemana = evento.fecha.toLocaleDateString('es-ES', { weekday: 'short' });
+
+                const badgeProximo = esProximo ? '<span class="badge bg-danger mb-2"><i class="bi bi-star-fill me-1"></i>Próximo</span>' : '';
+                const claseProximo = esProximo ? 'border-danger' : '';
+
+                html += `
+                    <div class="col-md-3 mb-4">
+                        <div class="calendar-day ${claseProximo}">
+                            ${badgeProximo}
+                            <h5>${mesStr}</h5>
+                            <div class="calendar-event" onclick="showEventDetail('${evento.id}')">
+                                <span><strong>${diaSemana} ${fechaStr}</strong> - ${evento.titulo}</span>
+                            </div>
+                            <div class="calendar-event-meta">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i>${evento.hora}</small>
+                                <br>
+                                <small class="text-muted"><i class="bi bi-geo-alt me-1"></i>${evento.lugar}</small>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+
+            // Actualizar indicador
+            const indicator = document.getElementById('calendar-live-indicator');
+            if (indicator) {
+                if (proximoEvento) {
+                    const diasRestantes = Math.ceil((proximoEvento.fecha - hoy) / (1000 * 60 * 60 * 24));
+                    if (diasRestantes === 0) {
+                        indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Hoy hay evento!';
+                        indicator.className = 'badge bg-warning text-dark';
+                    } else if (diasRestantes === 1) {
+                        indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Mañana! ' + proximoEvento.titulo;
+                        indicator.className = 'badge bg-warning text-dark';
+                    } else {
+                        indicator.innerHTML = `<i class="bi bi-circle-fill me-1"></i>Próximo: ${diasRestantes} días - ${proximoEvento.titulo}`;
+                        indicator.className = 'badge bg-success';
+                    }
+                } else {
+                    indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>Calendario Actualizado';
+                    indicator.className = 'badge bg-secondary';
+                }
+            }
+        }
+
+        // Renderizar calendario al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCalendar();
+        });

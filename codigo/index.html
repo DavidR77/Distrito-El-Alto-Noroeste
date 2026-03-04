@@ -296,63 +296,13 @@
                 <p class="text-center mb-5">Eventos y actividades programadas para nuestro distrito. Únete a nuestras actividades.</p>
                 
                 <div class="calendar-section">
-                    <div class="row">
-                        <div class="col-md-3 mb-4">
-                            <div class="calendar-day">
-                                <h5>Febrero</h5>
-                                <div class="calendar-event" onclick="showEventDetail('conferencia-jovenes')">
-                                    <span><strong>15 Feb</strong> - Conferencia de Jóvenes</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('reunion-pastores')">
-                                    <span><strong>22 Feb</strong> - Reunión de Pastores</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('taller-mujeres')">
-                                    <span><strong>28 Feb</strong> - Taller de Mujeres</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="calendar-day">
-                                <h5>Marzo</h5>
-                                <div class="calendar-event" onclick="showEventDetail('campamento-infantil')">
-                                    <span><strong>8 Mar</strong> - Campamento Infantil</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('taller-liderazgo')">
-                                    <span><strong>15 Mar</strong> - Taller de Liderazgo</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('culto-oracion')">
-                                    <span><strong>22 Mar</strong> - Culto de Oración</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="calendar-day">
-                                <h5>Abril</h5>
-                                <div class="calendar-event" onclick="showEventDetail('seminario-teologico')">
-                                    <span><strong>5 Abr</strong> - Seminario Teológico</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('culto-avivamiento')">
-                                    <span><strong>12 Abr</strong> - Culto de Avivamiento</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('domingo-ramos')">
-                                    <span><strong>13 Abr</strong> - Domingo de Ramos</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="calendar-day">
-                                <h5>Mayo</h5>
-                                <div class="calendar-event" onclick="showEventDetail('asamblea-distrital')">
-                                    <span><strong>3 May</strong> - Asamblea Distrital</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('feria-ministerios')">
-                                    <span><strong>10 May</strong> - Feria de Ministerios</span>
-                                </div>
-                                <div class="calendar-event" onclick="showEventDetail('dia-madre')">
-                                    <span><strong>11 May</strong> - Celebración Día de la Madre</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="calendar-status mb-4 text-center">
+                        <span id="calendar-live-indicator" class="badge bg-success">
+                            <i class="bi bi-circle-fill me-1"></i>Próximos Eventos
+                        </span>
+                    </div>
+                    <div id="calendar-events-container" class="row">
+                        <!-- Los eventos se cargarán dinámicamente desde JavaScript -->
                     </div>
                     <div class="text-center mt-4">
                         <a href="image/The Calendar.jpeg" class="btn btn-primary-custom" target="_blank">
@@ -753,7 +703,9 @@
                             <li>Programas de formación ministerial</li>
                         </ul>
                         <div class="text-center mt-4">
-                            <a href="../DOCUMENTOS/PLANIFICACI%C3%93N%20DE%20ETED%202022.DOC" class="btn btn-primary-custom">LOS ESTUDIOS TEOLÓGICOS</a>
+                            <a href="DOCUMENTOS/PLANIFICACI%C3%93N%20DE%20ETED%202022.DOC%20-%20Google%20Docs.pdf" class="btn btn-primary-custom" target="_blank">
+                                <i class="bi bi-file-earmark-pdf me-2"></i>LOS ESTUDIOS TEOLÓGICOS
+                            </a>
                         </div>
                     </div>
                     
