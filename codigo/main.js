@@ -1233,3 +1233,98 @@
                 applyTheme(next);
             });
         });
+
+        // Función para mostrar detalles de eventos del calendario
+        function showEventDetail(eventId) {
+            const eventos = {
+                'conferencia-jovenes': {
+                    titulo: 'Conferencia de Jóvenes',
+                    fecha: '15 de Febrero, 2026',
+                    hora: '09:00 - 18:00',
+                    lugar: 'Auditorio Principal',
+                    descripcion: 'Un día lleno de adoración, enseñanza y compañerismo para jóvenes de todas las iglesias del distrito. Talleres, música en vivo y concursos.'
+                },
+                'reunion-pastores': {
+                    titulo: 'Reunión de Pastores',
+                    fecha: '22 de Febrero, 2026',
+                    hora: '15:00 - 17:00',
+                    lugar: 'Sala de Conferencias',
+                    descripcion: 'Reunión mensual de pastores para coordinar actividades, compartir visiones y fortalecer el trabajo ministerial del distrito.'
+                },
+                'taller-mujeres': {
+                    titulo: 'Taller de Mujeres',
+                    fecha: '28 de Febrero, 2026',
+                    hora: '14:00 - 17:00',
+                    lugar: 'Salón Multiusos',
+                    descripcion: 'Taller de capacitación y edificación para mujeres, con temas de desarrollo personal, espiritualidad y servicio a la comunidad.'
+                },
+                'campamento-infantil': {
+                    titulo: 'Campamento Infantil',
+                    fecha: '8 de Marzo, 2026',
+                    hora: '08:00 - 17:00',
+                    lugar: 'Zona Recreativa',
+                    descripcion: 'Un día especial para los niños con juegos, dinámicas, enseñanzas bíblicas y mucha diversión. Edades 5-12 años.'
+                },
+                'taller-liderazgo': {
+                    titulo: 'Taller de Liderazgo',
+                    fecha: '15 de Marzo, 2026',
+                    hora: '09:00 - 13:00',
+                    lugar: 'Auditorio Principal',
+                    descripcion: 'Formación para líderes de células, ministerios y obreos. Temas: liderazgo servicial, discipulado efectivo y gestión de equipos.'
+                },
+                'culto-oracion': {
+                    titulo: 'Culto de Oración',
+                    fecha: '22 de Marzo, 2026',
+                    hora: '19:00 - 21:00',
+                    lugar: 'Templo Central',
+                    descripcion: 'Noche de oración y avivamiento. Un tiempo para buscar la presencia de Dios, interceder por las necesidades y fortalecer la vida espiritual.'
+                },
+                'seminario-teologico': {
+                    titulo: 'Seminario Teológico',
+                    fecha: '5 de Abril, 2026',
+                    hora: '08:30 - 16:30',
+                    lugar: 'Centro de Capacitación',
+                    descripcion: 'Seminario intensivo sobre doctrina nazarena, historia de la iglesia y herramientas para el estudio bíblico. Certificación disponible.'
+                },
+                'culto-avivamiento': {
+                    titulo: 'Culto de Avivamiento',
+                    fecha: '12 de Abril, 2026',
+                    hora: '19:00 - 21:30',
+                    lugar: 'Templo Central',
+                    descripcion: 'Culto especial de avivamiento con predicación expositiva, adoración congregacional y tiempo de ministerio personal.'
+                },
+                'domingo-ramos': {
+                    titulo: 'Domingo de Ramos',
+                    fecha: '13 de Abril, 2026',
+                    hora: '10:00 - 12:00',
+                    lugar: 'Todas las Iglesias',
+                    descripcion: 'Celebración del inicio de la Semana Santa. Procesión con palmas, culto especial y enfoque en la entrada triunfal de Jesús.'
+                },
+                'asamblea-distrital': {
+                    titulo: 'Asamblea Distrital',
+                    fecha: '3 de Mayo, 2026',
+                    hora: '09:00 - 14:00',
+                    lugar: 'Auditorio Principal',
+                    descripcion: 'Asamblea general del distrito para informes ministeriales, aprobación de presupuesto y planificación de actividades anuales.'
+                },
+                'feria-ministerios': {
+                    titulo: 'Feria de Ministerios',
+                    fecha: '10 de Mayo, 2026',
+                    hora: '10:00 - 16:00',
+                    lugar: 'Plaza Central',
+                    descripcion: 'Exposición de los diferentes ministerios del distrito. Oportunidad para conocer, inscribirse y servir en las áreas de tu interés.'
+                },
+                'dia-madre': {
+                    titulo: 'Celebración Día de la Madre',
+                    fecha: '11 de Mayo, 2026',
+                    hora: '10:00 - 13:00',
+                    lugar: 'Templo Central',
+                    descripcion: 'Culto especial en honor a las madres. Reconocimiento, obsequios, almuerzo comunitario y tiempo de bendición para las mamás.'
+                }
+            };
+
+            const evento = eventos[eventId];
+            if (evento) {
+                alert(`📅 ${evento.titulo}\n\n📆 Fecha: ${evento.fecha}\n🕐 Hora: ${evento.hora}\n📍 Lugar: ${evento.lugar}\n\n📝 ${evento.descripcion}`);
+            }
+        }
