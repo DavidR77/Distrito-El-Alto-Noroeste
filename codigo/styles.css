@@ -148,8 +148,8 @@
             position: relative;
             overflow: hidden;
             --carousel-overlay-left: 0.52;
-            --carousel-overlay-mid: 0.28;
-            --carousel-overlay-right: 0.12;
+            --carousel-overlay-mid: 0.40;
+            --carousel-overlay-right: 0.30;
         }
 
         .carousel-bg {
