@@ -1132,11 +1132,11 @@
 
         // Datos de eventos del calendario con fechas reales
         const calendarEvents = [
-            // ENERO 2026
+            // MARZO 2026
             {
                 id: 'ayuno-distrital-ene',
                 titulo: 'Ayuno Distrital',
-                fecha: new Date('2026-01-09'),
+                fecha: new Date('2026-03-09'),
                 hora: 'Todo el día',
                 lugar: 'Todas las Iglesias',
                 descripcion: 'Jornada de ayuno y oración en todo el distrito.'
@@ -1144,7 +1144,7 @@
             {
                 id: 'convencion-nacional-1',
                 titulo: 'Convención Nacional',
-                fecha: new Date('2026-01-12'),
+                fecha: new Date('2026-03-12'),
                 hora: 'Todo el día',
                 lugar: 'Sede Nacional',
                 descripcion: 'Primera jornada de la Convención Nacional de la Iglesia del Nazareno.'
@@ -1152,7 +1152,7 @@
             {
                 id: 'convencion-nacional-2',
                 titulo: 'Convención Nacional',
-                fecha: new Date('2026-01-13'),
+                fecha: new Date('2026-03-13'),
                 hora: 'Todo el día',
                 lugar: 'Sede Nacional',
                 descripcion: 'Segunda jornada de la Convención Nacional.'
@@ -1160,7 +1160,7 @@
             {
                 id: 'convencion-nacional-3',
                 titulo: 'Convención Nacional',
-                fecha: new Date('2026-01-14'),
+                fecha: new Date('2026-03-14'),
                 hora: 'Todo el día',
                 lugar: 'Sede Nacional',
                 descripcion: 'Tercera jornada de la Convención Nacional. Clausura y compromisos.'
@@ -1168,7 +1168,7 @@
             {
                 id: 'asamblea-distrital-ene',
                 titulo: 'Asamblea Distrital',
-                fecha: new Date('2026-01-16'),
+                fecha: new Date('2026-03-16'),
                 hora: '09:00 - 13:00',
                 lugar: 'Auditorio Distrital',
                 descripcion: 'Asamblea ordinaria del distrito para tratar asuntos administrativos y ministeriales.'
@@ -1176,7 +1176,7 @@
             {
                 id: 'reunion-pastores-ene',
                 titulo: 'Reunión Distrital de Pastores',
-                fecha: new Date('2026-01-22'),
+                fecha: new Date('2026-03-22'),
                 hora: '09:00 - 12:00',
                 lugar: 'Sala de Conferencias',
                 descripcion: 'Reunión mensual de pastores para coordinación y fortalecimiento ministerial.'
@@ -1184,16 +1184,16 @@
             {
                 id: 'capacitacion-juntas',
                 titulo: 'Capacitación de Juntas Locales',
-                fecha: new Date('2026-01-30'),
+                fecha: new Date('2026-03-30'),
                 hora: '09:00 - 16:00',
                 lugar: 'Centro de Capacitación',
                 descripcion: 'Capacitación para miembros de juntas locales de las iglesias del distrito.'
             },
-            // FEBRERO 2026
+            // ABRIL 2026
             {
                 id: 'campamento-jni-feb-1',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-12'),
+                fecha: new Date('2026-04-12'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Inicio del campamento zonal para jóvenes de JNI.'
@@ -1201,7 +1201,7 @@
             {
                 id: 'campamento-jni-feb-2',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-13'),
+                fecha: new Date('2026-04-13'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Segundo día del campamento zonal de JNI.'
@@ -1209,7 +1209,7 @@
             {
                 id: 'campamento-jni-feb-3',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-14'),
+                fecha: new Date('2026-04-14'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Tercer día del campamento zonal de JNI.'
@@ -1217,7 +1217,7 @@
             {
                 id: 'campamento-jni-feb-4',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-15'),
+                fecha: new Date('2026-04-15'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Cuarto día del campamento zonal de JNI.'
@@ -1225,7 +1225,7 @@
             {
                 id: 'campamento-jni-feb-5',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-16'),
+                fecha: new Date('2026-04-16'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Último día del campamento zonal de JNI. Clausura y celebración.'
@@ -1233,7 +1233,7 @@
             {
                 id: 'taller-maestros-dni',
                 titulo: 'Taller para Maestros DNI',
-                fecha: new Date('2026-02-21'),
+                fecha: new Date('2026-04-21'),
                 hora: '09:00 - 16:00',
                 lugar: 'Centro de Capacitación',
                 descripcion: 'Taller de capacitación para maestros del Departamento de Niños Internacional.'
@@ -1241,16 +1241,16 @@
             {
                 id: 'nazcom-jni',
                 titulo: 'NazCom JNI',
-                fecha: new Date('2026-02-27'),
+                fecha: new Date('2026-04-27'),
                 hora: '09:00 - 18:00',
                 lugar: 'Auditorio Principal',
                 descripcion: 'Encuentro de comunicadores de Jóvenes de Nazareno Internacional.'
             },
-            // ENERO 2026
+            // MARZO 2026
             {
                 id: 'ayuno-distrital-ene',
                 titulo: 'Ayuno Distrital',
-                fecha: new Date('2026-01-09'),
+                fecha: new Date('2026-03-09'),
                 hora: 'Todo el día',
                 lugar: 'Todas las Iglesias',
                 descripcion: 'Jornada de ayuno y oración en todo el distrito.'
@@ -1258,7 +1258,7 @@
             {
                 id: 'convencion-nacional-1',
                 titulo: 'Convención Nacional',
-                fecha: new Date('2026-01-12'),
+                fecha: new Date('2026-03-12'),
                 hora: 'Todo el día',
                 lugar: 'Sede Nacional',
                 descripcion: 'Primera jornada de la Convención Nacional de la Iglesia del Nazareno.'
@@ -1266,7 +1266,7 @@
             {
                 id: 'convencion-nacional-2',
                 titulo: 'Convención Nacional',
-                fecha: new Date('2026-01-13'),
+                fecha: new Date('2026-03-13'),
                 hora: 'Todo el día',
                 lugar: 'Sede Nacional',
                 descripcion: 'Segunda jornada de la Convención Nacional.'
@@ -1274,7 +1274,7 @@
             {
                 id: 'convencion-nacional-3',
                 titulo: 'Convención Nacional',
-                fecha: new Date('2026-01-14'),
+                fecha: new Date('2026-03-14'),
                 hora: 'Todo el día',
                 lugar: 'Sede Nacional',
                 descripcion: 'Tercera jornada de la Convención Nacional. Clausura y compromisos.'
@@ -1282,7 +1282,7 @@
             {
                 id: 'asamblea-distrital-ene',
                 titulo: 'Asamblea Distrital',
-                fecha: new Date('2026-01-16'),
+                fecha: new Date('2026-03-16'),
                 hora: '09:00 - 13:00',
                 lugar: 'Auditorio Distrital',
                 descripcion: 'Asamblea ordinaria del distrito para tratar asuntos administrativos y ministeriales.'
@@ -1290,7 +1290,7 @@
             {
                 id: 'reunion-pastores-ene',
                 titulo: 'Reunión Distrital de Pastores',
-                fecha: new Date('2026-01-22'),
+                fecha: new Date('2026-03-22'),
                 hora: '09:00 - 12:00',
                 lugar: 'Sala de Conferencias',
                 descripcion: 'Reunión mensual de pastores para coordinación y fortalecimiento ministerial.'
@@ -1298,16 +1298,16 @@
             {
                 id: 'capacitacion-juntas',
                 titulo: 'Capacitación de Juntas Locales',
-                fecha: new Date('2026-01-30'),
+                fecha: new Date('2026-03-30'),
                 hora: '09:00 - 16:00',
                 lugar: 'Centro de Capacitación',
                 descripcion: 'Capacitación para miembros de juntas locales de las iglesias del distrito.'
             },
-            // FEBRERO 2026
+            // ABRIL 2026
             {
                 id: 'campamento-jni-feb-1',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-12'),
+                fecha: new Date('2026-04-12'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Inicio del campamento zonal para jóvenes de JNI.'
@@ -1315,7 +1315,7 @@
             {
                 id: 'campamento-jni-feb-2',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-13'),
+                fecha: new Date('2026-04-13'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Segundo día del campamento zonal de JNI.'
@@ -1323,7 +1323,7 @@
             {
                 id: 'campamento-jni-feb-3',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-14'),
+                fecha: new Date('2026-04-14'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Tercer día del campamento zonal de JNI.'
@@ -1331,7 +1331,7 @@
             {
                 id: 'campamento-jni-feb-4',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-15'),
+                fecha: new Date('2026-04-15'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Cuarto día del campamento zonal de JNI.'
@@ -1339,7 +1339,7 @@
             {
                 id: 'campamento-jni-feb-5',
                 titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-02-16'),
+                fecha: new Date('2026-04-16'),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
                 descripcion: 'Último día del campamento zonal de JNI. Clausura y celebración.'
@@ -1347,7 +1347,7 @@
             {
                 id: 'taller-maestros-dni',
                 titulo: 'Taller para Maestros DNI',
-                fecha: new Date('2026-02-21'),
+                fecha: new Date('2026-04-21'),
                 hora: '09:00 - 16:00',
                 lugar: 'Centro de Capacitación',
                 descripcion: 'Taller de capacitación para maestros del Departamento de Niños Internacional.'
@@ -1355,7 +1355,7 @@
             {
                 id: 'nazcom-jni',
                 titulo: 'NazCom JNI',
-                fecha: new Date('2026-02-27'),
+                fecha: new Date('2026-04-27'),
                 hora: '09:00 - 18:00',
                 lugar: 'Auditorio Principal',
                 descripcion: 'Encuentro de comunicadores de Jóvenes de Nazareno Internacional.'
