@@ -1130,241 +1130,14 @@
             });
         });
 
+
         // Datos de eventos del calendario con fechas reales
         const calendarEvents = [
             // MARZO 2026
             {
-                id: 'ayuno-distrital-ene',
-                titulo: 'Ayuno Distrital',
-                fecha: new Date('2026-03-09'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Iglesias',
-                descripcion: 'Jornada de ayuno y oración en todo el distrito.'
-            },
-            {
-                id: 'convencion-nacional-1',
-                titulo: 'Convención Nacional',
-                fecha: new Date('2026-03-12'),
-                hora: 'Todo el día',
-                lugar: 'Sede Nacional',
-                descripcion: 'Primera jornada de la Convención Nacional de la Iglesia del Nazareno.'
-            },
-            {
-                id: 'convencion-nacional-2',
-                titulo: 'Convención Nacional',
-                fecha: new Date('2026-03-13'),
-                hora: 'Todo el día',
-                lugar: 'Sede Nacional',
-                descripcion: 'Segunda jornada de la Convención Nacional.'
-            },
-            {
-                id: 'convencion-nacional-3',
-                titulo: 'Convención Nacional',
-                fecha: new Date('2026-03-14'),
-                hora: 'Todo el día',
-                lugar: 'Sede Nacional',
-                descripcion: 'Tercera jornada de la Convención Nacional. Clausura y compromisos.'
-            },
-            {
-                id: 'asamblea-distrital-ene',
-                titulo: 'Asamblea Distrital',
-                fecha: new Date('2026-03-16'),
-                hora: '09:00 - 13:00',
-                lugar: 'Auditorio Distrital',
-                descripcion: 'Asamblea ordinaria del distrito para tratar asuntos administrativos y ministeriales.'
-            },
-            {
-                id: 'reunion-pastores-ene',
-                titulo: 'Reunión Distrital de Pastores',
-                fecha: new Date('2026-03-22'),
-                hora: '09:00 - 12:00',
-                lugar: 'Sala de Conferencias',
-                descripcion: 'Reunión mensual de pastores para coordinación y fortalecimiento ministerial.'
-            },
-            {
-                id: 'capacitacion-juntas',
-                titulo: 'Capacitación de Juntas Locales',
-                fecha: new Date('2026-03-30'),
-                hora: '09:00 - 16:00',
-                lugar: 'Centro de Capacitación',
-                descripcion: 'Capacitación para miembros de juntas locales de las iglesias del distrito.'
-            },
-            // ABRIL 2026
-            {
-                id: 'campamento-jni-feb-1',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-12'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Inicio del campamento zonal para jóvenes de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-2',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-13'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Segundo día del campamento zonal de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-3',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-14'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Tercer día del campamento zonal de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-4',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-15'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Cuarto día del campamento zonal de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-5',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-16'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Último día del campamento zonal de JNI. Clausura y celebración.'
-            },
-            {
-                id: 'taller-maestros-dni',
-                titulo: 'Taller para Maestros DNI',
-                fecha: new Date('2026-04-21'),
-                hora: '09:00 - 16:00',
-                lugar: 'Centro de Capacitación',
-                descripcion: 'Taller de capacitación para maestros del Departamento de Niños Internacional.'
-            },
-            {
-                id: 'nazcom-jni',
-                titulo: 'NazCom JNI',
-                fecha: new Date('2026-04-27'),
-                hora: '09:00 - 18:00',
-                lugar: 'Auditorio Principal',
-                descripcion: 'Encuentro de comunicadores de Jóvenes de Nazareno Internacional.'
-            },
-            // MARZO 2026
-            {
-                id: 'ayuno-distrital-ene',
-                titulo: 'Ayuno Distrital',
-                fecha: new Date('2026-03-09'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Iglesias',
-                descripcion: 'Jornada de ayuno y oración en todo el distrito.'
-            },
-            {
-                id: 'convencion-nacional-1',
-                titulo: 'Convención Nacional',
-                fecha: new Date('2026-03-12'),
-                hora: 'Todo el día',
-                lugar: 'Sede Nacional',
-                descripcion: 'Primera jornada de la Convención Nacional de la Iglesia del Nazareno.'
-            },
-            {
-                id: 'convencion-nacional-2',
-                titulo: 'Convención Nacional',
-                fecha: new Date('2026-03-13'),
-                hora: 'Todo el día',
-                lugar: 'Sede Nacional',
-                descripcion: 'Segunda jornada de la Convención Nacional.'
-            },
-            {
-                id: 'convencion-nacional-3',
-                titulo: 'Convención Nacional',
-                fecha: new Date('2026-03-14'),
-                hora: 'Todo el día',
-                lugar: 'Sede Nacional',
-                descripcion: 'Tercera jornada de la Convención Nacional. Clausura y compromisos.'
-            },
-            {
-                id: 'asamblea-distrital-ene',
-                titulo: 'Asamblea Distrital',
-                fecha: new Date('2026-03-16'),
-                hora: '09:00 - 13:00',
-                lugar: 'Auditorio Distrital',
-                descripcion: 'Asamblea ordinaria del distrito para tratar asuntos administrativos y ministeriales.'
-            },
-            {
-                id: 'reunion-pastores-ene',
-                titulo: 'Reunión Distrital de Pastores',
-                fecha: new Date('2026-03-22'),
-                hora: '09:00 - 12:00',
-                lugar: 'Sala de Conferencias',
-                descripcion: 'Reunión mensual de pastores para coordinación y fortalecimiento ministerial.'
-            },
-            {
-                id: 'capacitacion-juntas',
-                titulo: 'Capacitación de Juntas Locales',
-                fecha: new Date('2026-03-30'),
-                hora: '09:00 - 16:00',
-                lugar: 'Centro de Capacitación',
-                descripcion: 'Capacitación para miembros de juntas locales de las iglesias del distrito.'
-            },
-            // ABRIL 2026
-            {
-                id: 'campamento-jni-feb-1',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-12'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Inicio del campamento zonal para jóvenes de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-2',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-13'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Segundo día del campamento zonal de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-3',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-14'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Tercer día del campamento zonal de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-4',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-15'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Cuarto día del campamento zonal de JNI.'
-            },
-            {
-                id: 'campamento-jni-feb-5',
-                titulo: 'Campamento Zonal de JNI',
-                fecha: new Date('2026-04-16'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Último día del campamento zonal de JNI. Clausura y celebración.'
-            },
-            {
-                id: 'taller-maestros-dni',
-                titulo: 'Taller para Maestros DNI',
-                fecha: new Date('2026-04-21'),
-                hora: '09:00 - 16:00',
-                lugar: 'Centro de Capacitación',
-                descripcion: 'Taller de capacitación para maestros del Departamento de Niños Internacional.'
-            },
-            {
-                id: 'nazcom-jni',
-                titulo: 'NazCom JNI',
-                fecha: new Date('2026-04-27'),
-                hora: '09:00 - 18:00',
-                lugar: 'Auditorio Principal',
-                descripcion: 'Encuentro de comunicadores de Jóvenes de Nazareno Internacional.'
-            },
-            // MARZO 2026
-            {
                 id: 'retiro-lideres-jni-1',
                 titulo: 'Retiro Distrital de Líderes de JNI',
-                fecha: new Date('2026-03-13'),
+                fecha: new Date(2026, 2, 13),
                 hora: 'Todo el día',
                 lugar: 'Campamento Distrital',
                 descripcion: 'Primer día del retiro especial para líderes de Jóvenes de Nazareno Internacional.'
@@ -1372,7 +1145,7 @@
             {
                 id: 'retiro-lideres-jni-2',
                 titulo: 'Retiro Distrital de Líderes de JNI',
-                fecha: new Date('2026-03-14'),
+                fecha: new Date(2026, 2, 14),
                 hora: 'Todo el día',
                 lugar: 'Campamento Distrital',
                 descripcion: 'Segundo día del retiro de líderes JNI.'
@@ -1380,32 +1153,40 @@
             {
                 id: 'retiro-lideres-jni-3',
                 titulo: 'Retiro Distrital de Líderes de JNI',
-                fecha: new Date('2026-03-15'),
+                fecha: new Date(2026, 2, 15),
                 hora: 'Todo el día',
                 lugar: 'Campamento Distrital',
                 descripcion: 'Tercer día del retiro de líderes JNI. Clausura y compromisos para el año.'
             },
             {
-                id: 'retiro-distrital-1',
-                titulo: 'Retiro Distrital',
-                fecha: new Date('2026-03-28'),
+                id: 'retiro-mni-1',
+                titulo: 'Retiro Distrital MNI',
+                fecha: new Date(2026, 2, 27),
                 hora: 'Todo el día',
-                lugar: 'Centro de Retiros',
-                descripcion: 'Retiro espiritual para toda la congregación. Tiempo de avivamiento y renovación.'
+                lugar: 'Campamento Distrital',
+                descripcion: 'Primer día del retiro distrital de Misiones Nazarenas Internacionales.'
             },
             {
-                id: 'retiro-distrital-2',
-                titulo: 'Retiro Distrital',
-                fecha: new Date('2026-03-29'),
+                id: 'retiro-mni-2',
+                titulo: 'Retiro Distrital MNI',
+                fecha: new Date(2026, 2, 28),
                 hora: 'Todo el día',
-                lugar: 'Centro de Retiros',
-                descripcion: 'Segundo día del retiro distrital con culto de clausura.'
+                lugar: 'Campamento Distrital',
+                descripcion: 'Segundo día del retiro distrital MNI.'
+            },
+            {
+                id: 'retiro-mni-3',
+                titulo: 'Retiro Distrital MNI',
+                fecha: new Date(2026, 2, 29),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Tercer día del retiro distrital MNI. Clausura y evaluación.'
             },
             // ABRIL 2026
             {
                 id: 'semana-santa-1',
                 titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-01'),
+                fecha: new Date(2026, 3, 3),
                 hora: 'Todo el día',
                 lugar: 'Todas las Zonas',
                 descripcion: 'Primera jornada de la campaña evangelística zonal de Semana Santa.'
@@ -1413,7 +1194,7 @@
             {
                 id: 'semana-santa-2',
                 titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-02'),
+                fecha: new Date(2026, 3, 4),
                 hora: 'Todo el día',
                 lugar: 'Todas las Zonas',
                 descripcion: 'Segunda jornada de la campaña evangelística de Semana Santa.'
@@ -1421,255 +1202,243 @@
             {
                 id: 'semana-santa-3',
                 titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-03'),
+                fecha: new Date(2026, 3, 5),
                 hora: 'Todo el día',
                 lugar: 'Todas las Zonas',
                 descripcion: 'Tercera jornada de la campaña evangelística de Semana Santa.'
             },
             {
-                id: 'semana-santa-4',
-                titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-04'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Zonas',
-                descripcion: 'Última jornada de la campaña evangelística zonal de Semana Santa.'
-            },
-            {
-                id: '40-dias-ayuno',
-                titulo: '40 Días de Ayuno y Oración',
-                fecha: new Date('2026-04-15'),
+                id: 'inicio-40-dias',
+                titulo: 'Inicio de 40 Días de Ayuno y Oración',
+                fecha: new Date(2026, 3, 15),
                 hora: 'Todo el día',
                 lugar: 'Templo Central',
                 descripcion: 'Inicio de los 40 días de ayuno y oración. Culto especial de convocatoria.'
             },
             {
-                id: 'campamento-ninos',
+                id: 'campamento-ninos-1',
                 titulo: 'Campamento Zonal de Niños',
-                fecha: new Date('2026-04-17'),
+                fecha: new Date(2026, 3, 17),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
-                descripcion: 'Campamento especial para niños de todas las iglesias de la zona.'
+                descripcion: 'Primer día del campamento especial para niños de todas las iglesias de la zona.'
+            },
+            {
+                id: 'campamento-ninos-2',
+                titulo: 'Campamento Zonal de Niños',
+                fecha: new Date(2026, 3, 18),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Segundo día del campamento zonal de niños.'
+            },
+            {
+                id: 'campamento-ninos-3',
+                titulo: 'Campamento Zonal de Niños',
+                fecha: new Date(2026, 3, 19),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Tercer día del campamento zonal de niños. Clausura y celebración.'
             },
             {
                 id: 'reunion-pastores-abril',
                 titulo: 'Reunión Distrital de Pastores',
-                fecha: new Date('2026-04-22'),
+                fecha: new Date(2026, 3, 25),
                 hora: '09:00 - 12:00',
                 lugar: 'Sala de Conferencias',
                 descripcion: 'Reunión mensual de pastores para coordinar actividades y fortalecer el trabajo ministerial.'
             },
             {
-                id: 'dia-nino',
-                titulo: 'Día del Niño / Actividad de Gracia',
-                fecha: new Date('2026-04-26'),
-                hora: '10:00 - 14:00',
+                id: 'cierre-40-dias-abril',
+                titulo: 'Cierre de 40 Días de Ayuno y Oración',
+                fecha: new Date(2026, 3, 26),
+                hora: '19:00 - 21:00',
                 lugar: 'Templo Central',
-                descripcion: 'Celebración del Día del Niño con actividades especiales y programa de gracia.'
+                descripcion: 'Culto de cierre de los 40 días de ayuno y oración. Celebración y agradecimiento.'
             },
             // MAYO 2026
             {
-                id: 'semana-santa-1',
-                titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-01'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Zonas',
-                descripcion: 'Primera jornada de la campaña evangelística zonal de Semana Santa.'
-            },
-            {
-                id: 'semana-santa-2',
-                titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-02'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Zonas',
-                descripcion: 'Segunda jornada de la campaña evangelística de Semana Santa.'
-            },
-            {
-                id: 'semana-santa-3',
-                titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-03'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Zonas',
-                descripcion: 'Tercera jornada de la campaña evangelística de Semana Santa.'
-            },
-            {
-                id: 'semana-santa-4',
-                titulo: 'Campaña Zonal de Semana Santa',
-                fecha: new Date('2026-04-04'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Zonas',
-                descripcion: 'Última jornada de la campaña evangelística zonal de Semana Santa.'
-            },
-            {
-                id: '40-dias-ayuno',
-                titulo: '40 Días de Ayuno y Oración',
-                fecha: new Date('2026-04-15'),
-                hora: 'Todo el día',
-                lugar: 'Templo Central',
-                descripcion: 'Inicio de los 40 días de ayuno y oración. Culto especial de convocatoria.'
-            },
-            {
-                id: 'campamento-ninos',
-                titulo: 'Campamento Zonal de Niños',
-                fecha: new Date('2026-04-17'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Campamento especial para niños de todas las iglesias de la zona.'
-            },
-            {
-                id: 'reunion-pastores-abril',
-                titulo: 'Reunión Distrital de Pastores',
-                fecha: new Date('2026-04-22'),
-                hora: '09:00 - 12:00',
-                lugar: 'Sala de Conferencias',
-                descripcion: 'Reunión mensual de pastores para coordinar actividades y fortalecer el trabajo ministerial.'
-            },
-            {
-                id: 'dia-nino',
-                titulo: 'Día del Niño / Actividad de Gracia',
-                fecha: new Date('2026-04-26'),
-                hora: '10:00 - 14:00',
-                lugar: 'Templo Central',
-                descripcion: 'Celebración del Día del Niño con actividades especiales y programa de gracia.'
-            },
-            // MAYO 2026
-            {
-                id: 'aniversario-potosi',
+                id: 'aniversario-potosi-1',
                 titulo: 'Aniversario Misión Potosí',
-                fecha: new Date('2026-05-09'),
+                fecha: new Date(2026, 4, 9),
                 hora: 'Todo el día',
                 lugar: 'Iglesia Misión Potosí',
                 descripcion: 'Celebración del aniversario de la Iglesia Misión Potosí. Culto especial y convivencia.'
             },
             {
-                id: 'actualizacion-pastoral-may',
+                id: 'aniversario-potosi-2',
+                titulo: 'Aniversario Misión Potosí',
+                fecha: new Date(2026, 4, 10),
+                hora: 'Todo el día',
+                lugar: 'Iglesia Misión Potosí',
+                descripcion: 'Segundo día de celebración del aniversario con actividades especiales.'
+            },
+            {
+                id: 'actualizacion-pastoral-1',
                 titulo: 'Actualización Pastoral',
-                fecha: new Date('2026-05-14'),
+                fecha: new Date(2026, 4, 15),
                 hora: '09:00 - 14:00',
                 lugar: 'Centro de Capacitación',
                 descripcion: 'Jornada de actualización y capacitación para el equipo pastoral del distrito.'
             },
             {
-                id: 'revision-casas-rurales',
-                titulo: 'Revisión de Casas Rurales',
-                fecha: new Date('2026-05-16'),
+                id: 'actualizacion-pastoral-2',
+                titulo: 'Actualización Pastoral',
+                fecha: new Date(2026, 4, 16),
+                hora: '09:00 - 14:00',
+                lugar: 'Centro de Capacitación',
+                descripcion: 'Segunda jornada de actualización pastoral.'
+            },
+            {
+                id: 'revision-cajas-rural',
+                titulo: 'Revisión de Cajas Área Rural',
+                fecha: new Date(2026, 4, 23),
                 hora: '09:00 - 12:00',
                 lugar: 'Oficina Distrital',
-                descripcion: 'Revisión administrativa de las casas rurales de las iglesias del área rural.'
+                descripcion: 'Revisión administrativa de cajas de las iglesias del área rural.'
             },
             {
-                id: 'encuentro-vid',
+                id: 'cierre-40-dias-mayo',
+                titulo: 'Cierre de 40 Días de Ayuno y Oración',
+                fecha: new Date(2026, 4, 24),
+                hora: '19:00 - 21:00',
+                lugar: 'Templo Central',
+                descripcion: 'Culto de cierre y celebración final de los 40 días de ayuno y oración.'
+            },
+            {
+                id: 'campamento-plenitud-1',
+                titulo: 'Campamento Distrital de Plenitud de Vida',
+                fecha: new Date(2026, 4, 29),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Inicio del campamento para adultos sobre vida abundante en Cristo.'
+            },
+            {
+                id: 'campamento-plenitud-2',
+                titulo: 'Campamento Distrital de Plenitud de Vida',
+                fecha: new Date(2026, 4, 30),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Segundo día del campamento de plenitud de vida.'
+            },
+            {
+                id: 'campamento-plenitud-3',
+                titulo: 'Campamento Distrital de Plenitud de Vida',
+                fecha: new Date(2026, 4, 31),
+                hora: 'Todo el día',
+                lugar: 'Campamento Distrital',
+                descripcion: 'Tercer día del campamento de plenitud de vida. Clausura con culto especial.'
+            },
+            // JUNIO 2026
+            {
+                id: 'revision-cajas-junio',
+                titulo: 'Revisión de Cajas Locales y Distritales',
+                fecha: new Date(2026, 5, 13),
+                hora: '09:00 - 14:00',
+                lugar: 'Oficina Distrital',
+                descripcion: 'Revisión administrativa de cajas locales y distritales de las iglesias.'
+            },
+            {
+                id: 'encuentro-vid-1',
                 titulo: 'Encuentro Distrital de VID',
-                fecha: new Date('2026-05-23'),
+                fecha: new Date(2026, 5, 19),
                 hora: '09:00 - 18:00',
                 lugar: 'Auditorio Principal',
-                descripcion: 'Encuentro del Ministerio de Vida (VID) a nivel distrital.'
+                descripcion: 'Primer día del encuentro del Ministerio de Vida (VID) a nivel distrital.'
             },
             {
-                id: 'campamento-plenitud',
-                titulo: 'Campamento Distrital de Plenitud de Vida',
-                fecha: new Date('2026-05-30'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Distrital',
-                descripcion: 'Campamento para adultos sobre vida abundante en Cristo.'
-            },
-            // JUNIO 2026
-            {
-                id: 'retiro-pastores-jun',
-                titulo: 'Retiro Distrital de Pastores',
-                fecha: new Date('2026-06-11'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Distrital',
-                descripcion: 'Segundo día del campamento de plenitud de vida. Cierre con culto especial.'
-            },
-            // JUNIO 2026
-            {
-                id: 'retiro-pastores-jun',
-                titulo: 'Retiro Distrital de Pastores',
-                fecha: new Date('2026-06-11'),
-                hora: 'Todo el día',
-                lugar: 'Centro de Retiros',
-                descripcion: 'Retiro especial para pastores del distrito. Tiempo de descanso y renovación espiritual.'
+                id: 'encuentro-vid-2',
+                titulo: 'Encuentro Distrital de VID',
+                fecha: new Date(2026, 5, 20),
+                hora: '09:00 - 18:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Segundo día del encuentro distrital de VID.'
             },
             {
-                id: 'campamento-prejuvenil',
-                titulo: 'Campamento Zonal de Prejuvenil',
-                fecha: new Date('2026-06-19'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Campamento especial para prejuveniles de todas las iglesias.'
+                id: 'encuentro-vid-3',
+                titulo: 'Encuentro Distrital de VID',
+                fecha: new Date(2026, 5, 21),
+                hora: '09:00 - 18:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Tercer día del encuentro distrital de VID. Clausura y compromisos.'
             },
             {
-                id: 'torneos-biblicos-jni',
+                id: 'torneo-biblico-jni-1',
                 titulo: 'Torneos Bíblicos JNI Zonal',
-                fecha: new Date('2026-06-27'),
+                fecha: new Date(2026, 5, 27),
                 hora: '09:00 - 17:00',
                 lugar: 'Auditorio Principal',
-                descripcion: 'Competencia bíblica zonal para jóvenes de JNI.'
-            },
-            // JULIO 2026
-            {
-                id: 'dia-pastor',
-                titulo: 'Día del Pastor',
-                fecha: new Date('2026-07-10'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Iglesias',
-                descripcion: 'Celebración especial en honor a los pastores y sus familias.'
+                descripcion: 'Primera jornada de la competencia bíblica zonal para jóvenes de JNI.'
             },
             {
-                id: 'campamento-adultos',
-                titulo: 'Campamento Zonal de Adultos',
-                fecha: new Date('2026-07-23'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Campamento especial para adultos de todas las iglesias de la zona.'
-            },
-            // AGOSTO 2026
-            {
-                id: 'reunion-pastores-junio',
-                titulo: 'Reunión Distrital de Pastores',
-                fecha: new Date('2026-06-23'),
-                hora: '15:00 - 17:00',
-                lugar: 'Sala de Conferencias',
-                descripcion: 'Reunión mensual de pastores para coordinar actividades del mes de julio.'
-            },
-            // JULIO 2026
-            {
-                id: 'dia-pastor',
-                titulo: 'Día del Pastor',
-                fecha: new Date('2026-07-10'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Iglesias',
-                descripcion: 'Celebración especial en honor a los pastores y sus familias.'
-            },
-            {
-                id: 'campamento-adultos',
-                titulo: 'Campamento Zonal de Adultos',
-                fecha: new Date('2026-07-23'),
-                hora: 'Todo el día',
-                lugar: 'Campamento Zonal',
-                descripcion: 'Campamento especial para adultos de todas las iglesias de la zona.'
-            },
-            // AGOSTO 2026
-            {
-                id: 'torneo-ninos-dni',
-                titulo: 'Torneo de Niños DNI',
-                fecha: new Date('2026-08-06'),
+                id: 'torneo-biblico-jni-2',
+                titulo: 'Torneos Bíblicos JNI Zonal',
+                fecha: new Date(2026, 5, 28),
                 hora: '09:00 - 17:00',
-                lugar: 'Templo Central',
-                descripcion: 'Torneo bíblico y competencia para niños del Departamento de Niños Internacional.'
+                lugar: 'Auditorio Principal',
+                descripcion: 'Segunda jornada de los torneos bíblicos JNI. Final y premiación.'
+            },
+            // JULIO 2026
+            {
+                id: 'dia-pastor-1',
+                titulo: 'Día del Pastor',
+                fecha: new Date(2026, 6, 10),
+                hora: 'Todo el día',
+                lugar: 'Todas las Iglesias',
+                descripcion: 'Celebración especial en honor a los pastores y sus familias. Culto de agradecimiento.'
             },
             {
-                id: 'campamento-cafe',
-                titulo: 'Campamento Zonal de CAFE',
-                fecha: new Date('2026-08-12'),
+                id: 'dia-pastor-2',
+                titulo: 'Día del Pastor',
+                fecha: new Date(2026, 6, 11),
+                hora: 'Todo el día',
+                lugar: 'Todas las Iglesias',
+                descripcion: 'Segundo día de celebración del Día del Pastor con actividades especiales.'
+            },
+            {
+                id: 'dia-pastor-3',
+                titulo: 'Día del Pastor',
+                fecha: new Date(2026, 6, 12),
+                hora: 'Todo el día',
+                lugar: 'Todas las Iglesias',
+                descripcion: 'Tercer día de celebración y cierre del Día del Pastor.'
+            },
+            {
+                id: 'campamento-prejuvenil-1',
+                titulo: 'Campamento Zonal de Prejuveniles',
+                fecha: new Date(2026, 6, 24),
                 hora: 'Todo el día',
                 lugar: 'Campamento Zonal',
-                descripcion: 'Campamento zonal para el ministerio CAFE (Centro de Amigos y Familias).'
+                descripcion: 'Inicio del campamento especial para prejuveniles de todas las iglesias.'
+            },
+            {
+                id: 'campamento-prejuvenil-2',
+                titulo: 'Campamento Zonal de Prejuveniles',
+                fecha: new Date(2026, 6, 25),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Segundo día del campamento zonal de prejuveniles.'
+            },
+            {
+                id: 'campamento-prejuvenil-3',
+                titulo: 'Campamento Zonal de Prejuveniles',
+                fecha: new Date(2026, 6, 26),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Tercer día del campamento de prejuveniles. Clausura y celebración.'
+            },
+            // AGOSTO 2026
+            {
+                id: 'dia-pastor-agosto',
+                titulo: 'Día del Pastor',
+                fecha: new Date(2026, 7, 6),
+                hora: 'Todo el día',
+                lugar: 'Todas las Iglesias',
+                descripcion: 'Celebración especial del Día del Pastor en el mes de agosto.'
             },
             {
                 id: 'visita-senabol',
-                titulo: 'Visita del SENABOL ETED',
-                fecha: new Date('2026-08-16'),
+                titulo: 'Visita SENABOL – ETED',
+                fecha: new Date(2026, 7, 12),
                 hora: '09:00 - 14:00',
                 lugar: 'Auditorio Distrital',
                 descripcion: 'Visita de representantes del SENABOL ETED para coordinación educativa.'
@@ -1677,7 +1446,7 @@
             {
                 id: 'encuentro-deportivo-jni',
                 titulo: 'Encuentro Deportivo Distrital JNI',
-                fecha: new Date('2026-08-21'),
+                fecha: new Date(2026, 7, 15),
                 hora: '09:00 - 18:00',
                 lugar: 'Canchas Distritales',
                 descripcion: 'Encuentro deportivo para jóvenes de JNI de todo el distrito.'
@@ -1685,115 +1454,195 @@
             {
                 id: 'culto-pacto-jubileo',
                 titulo: 'Culto de Pacto en Jubileo',
-                fecha: new Date('2026-08-22'),
+                fecha: new Date(2026, 7, 16),
                 hora: '19:00 - 21:00',
                 lugar: 'Templo Central',
                 descripcion: 'Culto especial de pacto y compromiso en el año de Jubileo.'
             },
+            {
+                id: 'campamento-adultos-1',
+                titulo: 'Campamento Zonal de Adultos',
+                fecha: new Date(2026, 7, 21),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Inicio del campamento especial para adultos de todas las iglesias de la zona.'
+            },
+            {
+                id: 'campamento-adultos-2',
+                titulo: 'Campamento Zonal de Adultos',
+                fecha: new Date(2026, 7, 22),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Segundo día del campamento zonal de adultos.'
+            },
+            {
+                id: 'campamento-adultos-3',
+                titulo: 'Campamento Zonal de Adultos',
+                fecha: new Date(2026, 7, 23),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Tercer día del campamento de adultos. Clausura con culto especial.'
+            },
             // SEPTIEMBRE 2026
+            {
+                id: 'torneo-ninos-nacional',
+                titulo: 'Torneo Bíblico Nacional de Niños',
+                fecha: new Date(2026, 8, 5),
+                hora: '09:00 - 17:00',
+                lugar: 'Templo Central',
+                descripcion: 'Torneo bíblico nacional para niños de todas las zonas.'
+            },
+            {
+                id: 'campamento-cafe-1',
+                titulo: 'Campamento Zonal de CAFE',
+                fecha: new Date(2026, 8, 11),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Inicio del campamento zonal para el ministerio CAFE (Centro de Amigos y Familias).'
+            },
+            {
+                id: 'campamento-cafe-2',
+                titulo: 'Campamento Zonal de CAFE',
+                fecha: new Date(2026, 8, 12),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Segundo día del campamento zonal de CAFE.'
+            },
+            {
+                id: 'campamento-cafe-3',
+                titulo: 'Campamento Zonal de CAFE',
+                fecha: new Date(2026, 8, 13),
+                hora: 'Todo el día',
+                lugar: 'Campamento Zonal',
+                descripcion: 'Tercer día del campamento de CAFE. Clausura y celebración.'
+            },
             {
                 id: 'actualizacion-pastoral-sep',
                 titulo: 'Actualización Pastoral',
-                fecha: new Date('2026-09-12'),
+                fecha: new Date(2026, 8, 25),
                 hora: '09:00 - 14:00',
                 lugar: 'Centro de Capacitación',
                 descripcion: 'Jornada de actualización para el equipo pastoral del distrito.'
             },
             {
-                id: 'campana-misionera-1',
-                titulo: 'Campaña Misionera',
-                fecha: new Date('2026-09-25'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Zonas',
-                descripcion: 'Primera jornada de la campaña misionera de evangelismo.'
-            },
-            {
-                id: 'campana-misionera-2',
-                titulo: 'Campaña Misionera',
-                fecha: new Date('2026-09-26'),
-                hora: 'Todo el día',
-                lugar: 'Todas las Zonas',
-                descripcion: 'Segunda jornada de la campaña misionera de evangelismo.'
-            },
-            {
                 id: 'aniversario-hora-nazarena',
                 titulo: 'Aniversario Hora Nazarena',
-                fecha: new Date('2026-09-27'),
+                fecha: new Date(2026, 8, 27),
                 hora: '19:00 - 21:00',
                 lugar: 'Templo Central',
                 descripcion: 'Celebración del aniversario del programa Hora Nazarena.'
             },
             // OCTUBRE 2026
             {
-                id: 'maxima-mision',
+                id: 'maxima-mision-1',
                 titulo: 'Máxima Misión Cause JNI / MNI Evangelismo',
-                fecha: new Date('2026-10-09'),
+                fecha: new Date(2026, 9, 9),
                 hora: 'Todo el día',
                 lugar: 'Todas las Zonas',
-                descripcion: 'Jornada de máxima misión con evangelismo masivo de JNI y MNI.'
+                descripcion: 'Primera jornada de máxima misión con evangelismo masivo de JNI y MNI.'
             },
             {
-                id: 'encuentro-zonal-mam',
+                id: 'maxima-mision-2',
+                titulo: 'Máxima Misión Cause JNI / MNI Evangelismo',
+                fecha: new Date(2026, 9, 10),
+                hora: 'Todo el día',
+                lugar: 'Todas las Zonas',
+                descripcion: 'Segunda jornada de máxima misión y evangelismo.'
+            },
+            {
+                id: 'maxima-mision-3',
+                titulo: 'Máxima Misión Cause JNI / MNI Evangelismo',
+                fecha: new Date(2026, 9, 11),
+                hora: 'Todo el día',
+                lugar: 'Todas las Zonas',
+                descripcion: 'Tercera jornada de máxima misión. Cierre y celebración de resultados.'
+            },
+            {
+                id: 'encuentro-mam-1',
                 titulo: 'Encuentro Zonal del MAM',
-                fecha: new Date('2026-10-23'),
+                fecha: new Date(2026, 9, 23),
                 hora: '09:00 - 18:00',
                 lugar: 'Auditorio Principal',
-                descripcion: 'Encuentro zonal del Ministerio de Ayuda al Medio (MAM).'
+                descripcion: 'Primer día del encuentro zonal del Ministerio de Ayuda al Medio (MAM).'
+            },
+            {
+                id: 'encuentro-mam-2',
+                titulo: 'Encuentro Zonal del MAM',
+                fecha: new Date(2026, 9, 24),
+                hora: '09:00 - 18:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Segundo día del encuentro zonal MAM.'
+            },
+            {
+                id: 'encuentro-mam-3',
+                titulo: 'Encuentro Zonal del MAM',
+                fecha: new Date(2026, 9, 25),
+                hora: '09:00 - 18:00',
+                lugar: 'Auditorio Principal',
+                descripcion: 'Tercer día del encuentro zonal MAM. Clausura y compromisos.'
             },
             // NOVIEMBRE 2026
             {
-                id: 'capacitacion-caal',
-                titulo: 'Capacitación de CAAL',
-                fecha: new Date('2026-11-03'),
-                hora: '09:00 - 16:00',
-                lugar: 'Centro de Capacitación',
-                descripcion: 'Capacitación para líderes del Comité de Ayuda al Anciano Lisiado (CAAL).'
+                id: 'bautismo-agua',
+                titulo: 'Bautismo en Agua Zonal',
+                fecha: new Date(2026, 10, 2),
+                hora: '10:00 - 13:00',
+                lugar: 'Templo Central',
+                descripcion: 'Ceremonia zonal de bautismo en agua para nuevos creyentes.'
             },
             {
-                id: 'convencion-nacional-mam',
-                titulo: 'Convención Nacional de MAM',
-                fecha: new Date('2026-11-14'),
-                hora: 'Todo el día',
-                lugar: 'Sede Nacional',
-                descripcion: 'Convención nacional del Ministerio de Ayuda al Medio (MAM).'
+                id: 'reunion-pastores-nov',
+                titulo: 'Reunión Distrital de Pastores',
+                fecha: new Date(2026, 10, 14),
+                hora: '09:00 - 12:00',
+                lugar: 'Sala de Conferencias',
+                descripcion: 'Reunión mensual de pastores para coordinación ministerial.'
             },
             {
-                id: 'entrevistas-pastorales',
+                id: 'entrevistas-pastorales-1',
                 titulo: 'Entrevistas Pastorales',
-                fecha: new Date('2026-11-19'),
+                fecha: new Date(2026, 10, 19),
                 hora: '09:00 - 17:00',
                 lugar: 'Oficina Distrital',
                 descripcion: 'Entrevistas pastorales individuales para evaluación y acompañamiento.'
             },
             {
-                id: 'convencion-caal',
-                titulo: 'Convención Distrital de CAAL',
-                fecha: new Date('2026-11-28'),
+                id: 'entrevistas-pastorales-2',
+                titulo: 'Entrevistas Pastorales',
+                fecha: new Date(2026, 10, 20),
                 hora: '09:00 - 17:00',
-                lugar: 'Auditorio Principal',
-                descripcion: 'Convención distrital del Comité de Ayuda al Anciano Lisiado (CAAL).'
+                lugar: 'Oficina Distrital',
+                descripcion: 'Segundo día de entrevistas pastorales individuales.'
+            },
+            {
+                id: 'revision-cajas-distritales',
+                titulo: 'Revisión de Cajas Distritales',
+                fecha: new Date(2026, 10, 28),
+                hora: '09:00 - 14:00',
+                lugar: 'Oficina Distrital',
+                descripcion: 'Revisión administrativa de cajas distritales de todas las iglesias.'
             },
             // DICIEMBRE 2026
             {
                 id: 'sesion-anual-1',
                 titulo: 'Sesión Anual',
-                fecha: new Date('2026-12-05'),
+                fecha: new Date(2026, 11, 6),
                 hora: '09:00 - 13:00',
                 lugar: 'Auditorio Principal',
-                descripcion: 'Primera sesión anual del distrito para cierre de actividades.'
+                descripcion: 'Primera sesión anual del distrito para cierre de actividades del año.'
             },
             {
-                id: 'asamblea-distrital-dic',
-                titulo: 'Asamblea Distrital',
-                fecha: new Date('2026-12-10'),
-                hora: '09:00 - 13:00',
-                lugar: 'Auditorio Distrital',
-                descripcion: 'Asamblea ordinaria del distrito para aprobación de informes anuales.'
+                id: 'culto-agradecimiento-jni',
+                titulo: 'Culto de Agradecimiento JNI',
+                fecha: new Date(2026, 11, 12),
+                hora: '19:00 - 21:00',
+                lugar: 'Templo Central',
+                descripcion: 'Culto especial de agradecimiento de Jóvenes de Nazareno Internacional.'
             },
             {
                 id: 'sesion-anual-2',
                 titulo: 'Sesión Anual',
-                fecha: new Date('2026-12-12'),
+                fecha: new Date(2026, 11, 13),
                 hora: '09:00 - 13:00',
                 lugar: 'Auditorio Principal',
                 descripcion: 'Segunda sesión anual para cierre de actividades y bendición apostólica.'
@@ -1801,7 +1650,7 @@
             {
                 id: 'culto-navidad',
                 titulo: 'Culto de Navidad',
-                fecha: new Date('2026-12-19'),
+                fecha: new Date(2026, 11, 19),
                 hora: '19:00 - 21:00',
                 lugar: 'Templo Central',
                 descripcion: 'Culto especial de celebración del nacimiento de Jesús. Programa navideño con coros y drama.'
@@ -1822,7 +1671,7 @@
             }
         }
 
-        // Función para renderizar el calendario ordenado cronológicamente
+        // Función para renderizar el calendario agrupado por meses
         function renderCalendar() {
             const container = document.getElementById('calendar-events-container');
             if (!container) return;
@@ -1836,50 +1685,42 @@
             // Filtrar solo eventos futuros (o mostrar todos si no hay futuros)
             let eventosFuturos = eventosOrdenados.filter(e => e.fecha >= hoy);
             if (eventosFuturos.length === 0) {
-                eventosFuturos = eventosOrdenados.slice(-4); // Mostrar últimos 4 si no hay futuros
+                eventosFuturos = eventosOrdenados.slice(-12);
             }
 
-            // Mostrar máximo 4 eventos próximos
-            const eventosAMostrar = eventosFuturos.slice(0, 4);
+            // Agrupar eventos por mes
+            const mesesAgrupados = {};
+            eventosFuturos.forEach(evento => {
+                const mesKey = evento.fecha.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+                const mesCapitalizado = mesKey.charAt(0).toUpperCase() + mesKey.slice(1);
+                if (!mesesAgrupados[mesCapitalizado]) {
+                    mesesAgrupados[mesCapitalizado] = [];
+                }
+                mesesAgrupados[mesCapitalizado].push(evento);
+            });
 
-            // Encontrar el próximo evento
-            const proximoEvento = eventosFuturos[0];
+            // Mostrar máximo 4 meses
+            const mesesAMostrar = Object.keys(mesesAgrupados).slice(0, 4);
 
             let html = '';
-            eventosAMostrar.forEach((evento, index) => {
-                const esProximo = proximoEvento && evento.id === proximoEvento.id;
-                const fechaStr = evento.fecha.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
-                const mesStr = evento.fecha.toLocaleDateString('es-ES', { month: 'long' });
-                const diaSemana = evento.fecha.toLocaleDateString('es-ES', { weekday: 'short' });
-
-                const badgeProximo = esProximo ? '<span class="badge bg-danger mb-2"><i class="bi bi-star-fill me-1"></i>Próximo</span>' : '';
-                const claseProximo = esProximo ? 'border-danger' : '';
-                const diaNumero = evento.fecha.getDate();
-                const mesCorto = evento.fecha.toLocaleDateString('es-ES', { month: 'short' });
-
+            mesesAMostrar.forEach((mesNombre, index) => {
+                const eventosDelMes = mesesAgrupados[mesNombre];
+                
                 html += `
                     <div class="col-md-3 mb-4">
-                        <div class="calendar-day ${claseProximo}">
-                            ${badgeProximo}
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="calendar-date-badge bg-primary text-white rounded p-2 me-2 text-center" style="min-width: 50px;">
-                                    <div style="font-size: 1.5rem; font-weight: bold; line-height: 1;">${diaNumero}</div>
-                                    <div style="font-size: 0.75rem; text-transform: uppercase;">${mesCorto}</div>
+                        <div class="calendar-month-card">
+                            <div class="calendar-month-header">
+                                <i class="bi bi-calendar3"></i>
+                                <span class="ms-2">${mesNombre.charAt(0).toUpperCase() + mesNombre.slice(1).toLowerCase().replace(' 2026', '')}</span>
                             </div>
-                                <div>
-                                    <h6 class="mb-0 text-muted" style="font-size: 0.8rem;">${diaSemana.toUpperCase()}</h6>
-                                    <small class="text-muted">2026</small>
-                                </div>
+                            <div class="calendar-month-events">
+                                ${eventosDelMes.map(evento => `
+                                    <div class="calendar-month-event" onclick="showEventDetail('${evento.id}')">
+                                        <i class="bi bi-check2-square"></i>
+                                        <span><strong>${evento.fecha.getDate()}</strong> — ${evento.titulo}</span>
+                                    </div>
+                                `).join('')}
                             </div>
-                            <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">${evento.titulo}</h5>
-                            <div class="calendar-event-meta">
-                                <small class="text-muted"><i class="bi bi-clock me-1"></i>${evento.hora}</small>
-                                <br>
-                                <small class="text-muted"><i class="bi bi-geo-alt me-1"></i>${evento.lugar}</small>
-                            </div>
-                            <button class="btn btn-sm btn-outline-primary mt-2 w-100" onclick="showEventDetail('${evento.id}')">
-                                <i class="bi bi-info-circle me-1"></i>Ver detalles
-                            </button>
                         </div>
                     </div>
                 `;
@@ -1889,22 +1730,18 @@
 
             // Actualizar indicador
             const indicator = document.getElementById('calendar-live-indicator');
-            if (indicator) {
-                if (proximoEvento) {
-                    const diasRestantes = Math.ceil((proximoEvento.fecha - hoy) / (1000 * 60 * 60 * 24));
-                    if (diasRestantes === 0) {
-                        indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Hoy hay evento!';
-                        indicator.className = 'badge bg-warning text-dark';
-                    } else if (diasRestantes === 1) {
-                        indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Mañana! ' + proximoEvento.titulo;
-                        indicator.className = 'badge bg-warning text-dark';
-                    } else {
-                        indicator.innerHTML = `<i class="bi bi-circle-fill me-1"></i>Próximo: ${diasRestantes} días - ${proximoEvento.titulo}`;
-                        indicator.className = 'badge bg-success';
-                    }
+            if (indicator && eventosFuturos.length > 0) {
+                const proximoEvento = eventosFuturos[0];
+                const diasRestantes = Math.ceil((proximoEvento.fecha - hoy) / (1000 * 60 * 60 * 24));
+                if (diasRestantes === 0) {
+                    indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Hoy hay evento!';
+                    indicator.className = 'badge bg-warning text-dark';
+                } else if (diasRestantes === 1) {
+                    indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Mañana! ' + proximoEvento.titulo;
+                    indicator.className = 'badge bg-warning text-dark';
                 } else {
-                    indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>Calendario Actualizado';
-                    indicator.className = 'badge bg-secondary';
+                    indicator.innerHTML = `<i class="bi bi-circle-fill me-1"></i>Próximo: ${diasRestantes} días - ${proximoEvento.titulo}`;
+                    indicator.className = 'badge bg-success';
                 }
             }
         }
