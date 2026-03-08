@@ -974,8 +974,7 @@
             // Filtrar por nombre
             if (nombreBusqueda.trim() !== '') {
                 filtered = filtered.filter(iglesia => 
-                    iglesia.nombre.toLowerCase().includes(nombreBusqueda) ||
-                    iglesia.pastor.toLowerCase().includes(nombreBusqueda)
+                    iglesia.nombre.toLowerCase().includes(nombreBusqueda)
                 );
             }
             
