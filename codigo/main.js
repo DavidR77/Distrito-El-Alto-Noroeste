@@ -1685,42 +1685,41 @@
             // Filtrar solo eventos futuros (o mostrar todos si no hay futuros)
             let eventosFuturos = eventosOrdenados.filter(e => e.fecha >= hoy);
             if (eventosFuturos.length === 0) {
-                eventosFuturos = eventosOrdenados.slice(-12);
+                eventosFuturos = eventosOrdenados.slice(-4);
             }
 
-            // Agrupar eventos por mes
-            const mesesAgrupados = {};
-            eventosFuturos.forEach(evento => {
-                const mesKey = evento.fecha.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
-                const mesCapitalizado = mesKey.charAt(0).toUpperCase() + mesKey.slice(1);
-                if (!mesesAgrupados[mesCapitalizado]) {
-                    mesesAgrupados[mesCapitalizado] = [];
-                }
-                mesesAgrupados[mesCapitalizado].push(evento);
-            });
+            // Limitar a 4 eventos
+            const eventosAMostrar = eventosFuturos.slice(0, 4);
 
-            // Mostrar máximo 4 meses
-            const mesesAMostrar = Object.keys(mesesAgrupados).slice(0, 4);
+            // Encontrar el evento más próximo
+            const proximoEvento = eventosAMostrar.length > 0 ? eventosAMostrar[0] : null;
 
             let html = '';
-            mesesAMostrar.forEach((mesNombre, index) => {
-                const eventosDelMes = mesesAgrupados[mesNombre];
+            eventosAMostrar.forEach((evento) => {
+                const esProximo = proximoEvento && evento.id === proximoEvento.id;
+                const diaNumero = evento.fecha.getDate();
+                const mesCorto = evento.fecha.toLocaleDateString('es-ES', { month: 'short' }).toUpperCase();
                 
                 html += `
                     <div class="col-md-3 mb-4">
-                        <div class="calendar-month-card">
-                            <div class="calendar-month-header">
-                                <i class="bi bi-calendar3"></i>
-                                <span class="ms-2">${mesNombre.charAt(0).toUpperCase() + mesNombre.slice(1).toLowerCase().replace(' 2026', '')}</span>
-                            </div>
-                            <div class="calendar-month-events">
-                                ${eventosDelMes.map(evento => `
-                                    <div class="calendar-month-event" onclick="showEventDetail('${evento.id}')">
-                                        <i class="bi bi-check2-square"></i>
-                                        <span><strong>${evento.fecha.getDate()}</strong> — ${evento.titulo}</span>
+                        <div class="calendar-event-card ${esProximo ? 'proximo' : ''}">
+                            ${esProximo ? '<span class="badge-proximo"><i class="bi bi-star-fill me-1"></i>Próximo</span>' : ''}
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="calendar-date-badge">
+                                    <div class="dia-numero">${diaNumero}</div>
+                                    <div class="mes-corto">${mesCorto}</div>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="evento-titulo">${evento.titulo}</div>
+                                    <div class="evento-meta">
+                                        <span class="meta-item"><i class="bi bi-clock"></i>${evento.hora}</span>
+                                        <span class="meta-item"><i class="bi bi-geo-alt"></i>${evento.lugar}</span>
                                     </div>
-                                `).join('')}
+                                </div>
                             </div>
+                            <button class="btn-ver-detalles" onclick="showEventDetail('${evento.id}')">
+                                <i class="bi bi-info-circle me-1"></i>Ver detalles
+                            </button>
                         </div>
                     </div>
                 `;
@@ -1731,7 +1730,6 @@
             // Actualizar indicador
             const indicator = document.getElementById('calendar-live-indicator');
             if (indicator && eventosFuturos.length > 0) {
-                const proximoEvento = eventosFuturos[0];
                 const diasRestantes = Math.ceil((proximoEvento.fecha - hoy) / (1000 * 60 * 60 * 24));
                 if (diasRestantes === 0) {
                     indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Hoy hay evento!';
