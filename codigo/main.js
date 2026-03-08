@@ -1682,54 +1682,77 @@
             // Ordenar eventos por fecha
             const eventosOrdenados = [...calendarEvents].sort((a, b) => a.fecha - b.fecha);
 
-            // Filtrar solo eventos futuros (o mostrar todos si no hay futuros)
-            let eventosFuturos = eventosOrdenados.filter(e => e.fecha >= hoy);
-            if (eventosFuturos.length === 0) {
-                eventosFuturos = eventosOrdenados.slice(-4);
+            // Obtener mes actual
+            const mesActual = hoy.getMonth();
+            const añoActual = hoy.getFullYear();
+
+            // Filtrar solo eventos del mes actual
+            let eventosDelMesActual = eventosOrdenados.filter(e => {
+                return e.fecha.getMonth() === mesActual && e.fecha.getFullYear() === añoActual;
+            });
+
+            // Si no hay eventos en el mes actual, mostrar próximos eventos
+            if (eventosDelMesActual.length === 0) {
+                eventosDelMesActual = eventosOrdenados.filter(e => e.fecha >= hoy).slice(0, 4);
             }
 
-            // Limitar a 4 eventos
-            const eventosAMostrar = eventosFuturos.slice(0, 4);
-
-            // Encontrar el evento más próximo
-            const proximoEvento = eventosAMostrar.length > 0 ? eventosAMostrar[0] : null;
+            // Encontrar el evento más próximo para el badge
+            const proximoEvento = eventosDelMesActual.length > 0 ? eventosDelMesActual[0] : null;
 
             let html = '';
-            eventosAMostrar.forEach((evento) => {
-                const esProximo = proximoEvento && evento.id === proximoEvento.id;
-                const diaNumero = evento.fecha.getDate();
-                const mesCorto = evento.fecha.toLocaleDateString('es-ES', { month: 'short' }).toUpperCase();
-                
+            const mesSolo = hoy.toLocaleDateString('es-ES', { month: 'long' }).charAt(0).toUpperCase() + 
+                           hoy.toLocaleDateString('es-ES', { month: 'long' }).slice(1);
+            
+            if (eventosDelMesActual.length > 0) {
                 html += `
-                    <div class="col-md-3 mb-4">
-                        <div class="calendar-event-card ${esProximo ? 'proximo' : ''}">
-                            ${esProximo ? '<span class="badge-proximo"><i class="bi bi-star-fill me-1"></i>Próximo</span>' : ''}
-                            <div class="d-flex align-items-start mb-3">
-                                <div class="calendar-date-badge">
-                                    <div class="dia-numero">${diaNumero}</div>
-                                    <div class="mes-corto">${mesCorto}</div>
-                                </div>
-                                <div class="ms-3 flex-grow-1">
-                                    <div class="evento-titulo">${evento.titulo}</div>
-                                    <div class="evento-meta">
-                                        <span class="meta-item"><i class="bi bi-clock"></i>${evento.hora}</span>
-                                        <span class="meta-item"><i class="bi bi-geo-alt"></i>${evento.lugar}</span>
-                                    </div>
-                                </div>
+                    <div class="col-12 mb-5">
+                        <div class="calendar-month-section">
+                            <div class="calendar-month-title">
+                                <i class="bi bi-calendar3"></i>
+                                <span>${mesSolo}</span>
                             </div>
-                            <button class="btn-ver-detalles" onclick="showEventDetail('${evento.id}')">
-                                <i class="bi bi-info-circle me-1"></i>Ver detalles
-                            </button>
+                            <div class="row">
+                                ${eventosDelMesActual.map(evento => {
+                                    const esProximo = proximoEvento && evento.id === proximoEvento.id;
+                                    const diaNumero = evento.fecha.getDate();
+                                    const mesCorto = evento.fecha.toLocaleDateString('es-ES', { month: 'short' }).toUpperCase();
+                                    return `
+                                        <div class="col-md-6 col-lg-3 mb-4">
+                                            <div class="calendar-event-card ${esProximo ? 'proximo' : ''}">
+                                                ${esProximo ? '<span class="badge-proximo"><i class="bi bi-star-fill me-1"></i>Próximo</span>' : ''}
+                                                <div class="d-flex align-items-start mb-3">
+                                                    <div class="calendar-date-badge">
+                                                        <div class="dia-numero">${diaNumero}</div>
+                                                        <div class="mes-corto">${mesCorto}</div>
+                                                    </div>
+                                                    <div class="ms-3 flex-grow-1">
+                                                        <div class="evento-titulo">${evento.titulo}</div>
+                                                        <div class="evento-meta">
+                                                            <span class="meta-item"><i class="bi bi-clock"></i>${evento.hora}</span>
+                                                            <span class="meta-item"><i class="bi bi-geo-alt"></i>${evento.lugar}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn-ver-detalles" onclick="showEventDetail('${evento.id}')">
+                                                    <i class="bi bi-info-circle me-1"></i>Ver detalles
+                                                </button>
+                                            </div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
                         </div>
                     </div>
                 `;
-            });
+            } else {
+                html = '<div class="col-12 text-center"><p class="text-muted">No hay eventos programados para este mes</p></div>';
+            }
 
             container.innerHTML = html;
 
             // Actualizar indicador
             const indicator = document.getElementById('calendar-live-indicator');
-            if (indicator && eventosFuturos.length > 0) {
+            if (indicator && eventosDelMesActual.length > 0) {
                 const diasRestantes = Math.ceil((proximoEvento.fecha - hoy) / (1000 * 60 * 60 * 24));
                 if (diasRestantes === 0) {
                     indicator.innerHTML = '<i class="bi bi-circle-fill me-1"></i>¡Hoy hay evento!';
