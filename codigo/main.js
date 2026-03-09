@@ -1,823 +1,814 @@
-// Datos de las iglesias con información completa
+// Datos de las iglesias con información completa - DIRECTORIO DE IGLESIAS DEL DISTRITO EL ALTO NOROESTE
         const iglesias = [
             {
-                nombre: "Iglesia del Nazareno Alto Lima",
-                direccion: "---",
-                zona: "norte",
+                nombre: "1. ACHICA ARRIBA",
+                direccion: "Comunidad Achica Arriba, Prov. Ingavi",
+                zona: "machaca",
                 facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Achica+Arriba+Ingavi"
             },
             {
-                nombre: "Iglesia del Nazareno bautista Saavedra",
-                direccion: "Calle Paz #456, Zona Belén",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
-            },
-            {
-                nombre: "Iglesia del Nazareno 16 de Julio",
-                direccion: "Plaza Central #789, Centro",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
-            },
-            {
-                nombre: "Iglesia del Nazareno Nueva Jerusalen",
-                direccion: "Av. Libertad #234, Zona Oeste",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Rio Seco",
-                direccion: "Calle Esperanza #567, Zona Este",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno San Felipe de Sek'e",
-                direccion: "Av. Cristiana #890, Zona Norte",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
-            },
-            {
-                nombre: "Iglesia del Nazareno Villa Palestina",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
-            },
-            {
-                nombre: "Iglesia del Nazareno 16 de Febrero",
-                direccion: "Cerro Monte Sion #222, Zona Este",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Progreso",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
-            },
-            {
-                nombre: "Iglesia del Nazareno German Busch",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
-            },
-                        {
-                nombre: "Iglesia del Nazareno Mariscal Sucre",
-                direccion: "Av. Principal #123, Villa Abaroa",
-                zona: "norte",
-                facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
-            },
-            {
-                nombre: "Iglesia del Nazareno Betania",
-                direccion: "Calle Paz #456, Zona Belén",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
-            },
-            {
-                nombre: "Iglesia del Nazareno Fortaleza ",
-                direccion: "Plaza Central #789, Centro",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
-            },
-            {
-                nombre: "Iglesia del Nazareno Mision Huayna Potosi ",
-                direccion: "Av. Libertad #234, Zona Oeste",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Abanzada Pumamaya",
-                direccion: "Calle Esperanza #567, Zona Este",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Avanzada Bajo Milluni",
-                direccion: "Av. Cristiana #890, Zona Norte",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
-            },
-            {
-                nombre: "Iglesia del Nazareno Avanzada Tacachira",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
-            },
-            {
-                nombre: "Iglesia del Nazareno Avanzada Pomamaya Alta ",
-                direccion: "Cerro Monte Sion #222, Zona Este",
-                zona: "norte",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Aposento Alto",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
-            },
-            {
-                nombre: "Iglesia del Nazareno Belen",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
-            },
-                        {
-                nombre: "Iglesia del Nazareno El Paraiso",
-                direccion: "Av. Principal #123, Villa Abaroa",
-                zona: "central",
-                facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
-            },
-            {
-                nombre: "Iglesia del Nazareno Filadelfia",
-                direccion: "Calle Paz #456, Zona Belén",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
-            },
-            {
-                nombre: "Iglesia del Nazareno Primero de Mayo ",
-                direccion: "Plaza Central #789, Centro",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
-            },
-            {
-                nombre: "Iglesia del Nazareno Sajama",
-                direccion: "Av. Libertad #234, Zona Oeste",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno 7 de Septiembre",
-                direccion: "Calle Esperanza #567, Zona Este",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno 6 de Junio",
-                direccion: "Av. Cristiana #890, Zona Norte",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
-            },
-            {
-                nombre: "Iglesia del Nazareno Villa Abaroa",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
-            },
-            {
-                nombre: "Iglesia del Nazareno Pacajes",
-                direccion: "Cerro Monte Sion #222, Zona Este",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno La Florida",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
-            },
-            {
-                nombre: "Iglesia del Nazareno Villa Natividad",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Luz de Cristo",
-                direccion: "Av. Principal #123, Villa Abaroa",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenovillaabaroa",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
-            },
-            {
-                nombre: "Iglesia del Nazareno Victoria",
-                direccion: "Calle Paz #456, Zona Belén",
-                zona: "central",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
-            },
-            {
-                nombre: "Iglesia del Nazareno Sayhuapampa",
-                direccion: "Plaza Central #789, Centro",
-                zona: "carabuco",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
-            },
-            {
-                nombre: "Iglesia del Nazareno Saanchi",
-                direccion: "Av. Libertad #234, Zona Oeste",
-                zona: "carabuco",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Italque",
-                direccion: "Calle Esperanza #567, Zona Este",
-                zona: "carabuco",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Joko Pampa",
-                direccion: "Av. Cristiana #890, Zona Norte",
-                zona: "carabuco",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
-            },
-            {
-                nombre: "Iglesia del Nazareno Tilacoca",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
-                zona: "carabuco",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
-            },
-            {
-                nombre: "Iglesia del Nazareno Achica",
-                direccion: "Cerro Monte Sion #222, Zona Este",
-                zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Alto Chijini",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
-            },
-            {
-                nombre: "Iglesia del Nazareno Pocohota",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Senkata",
-                direccion: "Av. Principal #123, Villa Abaroa",
+                nombre: "2. EL ALTO: ALTO CHIJINI",
+                direccion: "Calle 3 N° 180, Zona Alto Chijini",
                 zona: "sur",
                 facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+3+180+Alto+Chijini+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Villa Exaltacion",
-                direccion: "Calle Paz #456, Zona Belén",
+                nombre: "3. EL ALTO: 2 DE FEBRERO",
+                direccion: "Cruce Ventilla, Z. 2 de Febrero",
                 zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Cruce+Ventilla+2+de+Febrero+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Villa Mercedes",
-                direccion: "Plaza Central #789, Centro",
+                nombre: "4. EL ALTO: SENKATA",
+                direccion: "Av. Goroicocha, Zona Ingavi \"B\", Senkata",
                 zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Goroicocha+Senkata+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Villa Santiago I",
-                direccion: "Av. Libertad #234, Zona Oeste",
+                nombre: "5. EL ALTO: VILLA EXALTACIÓN",
+                direccion: "Calle 5, N° 10, Zona Villa Exaltación Ira. Sección",
                 zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+5+10+Villa+Exaltacion+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Villa Santiago II",
-                direccion: "Calle Esperanza #567, Zona Este",
+                nombre: "6. EL ALTO: VILLA MERCEDES",
+                direccion: "Calle Huayna Kapac, Z/ Villa Mercedes",
                 zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+Huayna+Kapac+Villa+Mercedes+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Santa Rosa",
-                direccion: "Av. Cristiana #890, Zona Norte",
+                nombre: "7. EL ALTO: VILLA SANTIAGO I",
+                direccion: "Calle 4 N° 102, Z/ Villa Santiago 1",
                 zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+4+102+Villa+Santiago+1+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Dignidad2",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                nombre: "8. EL ALTO: VILLA SANTIAGO II",
+                direccion: "Calle 5 N° 939, Z/ Villa Santiago II",
                 zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+5+939+Villa+Santiago+II+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno 2 de Febrero",
-                direccion: "Cerro Monte Sion #222, Zona Este",
+                nombre: "9. EL ALTO: SANTA ROSA",
+                direccion: "Calle 5, Zona Santa Rosa N° 61",
                 zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+5+Santa+Rosa+61+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Santa Maria",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+                nombre: "10. POCOHOTA",
+                direccion: "Comunidad Pocota, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Pocohota+Ingavi"
             },
             {
-                nombre: "Iglesia del Nazareno Alto Marquirivi",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "sur",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+                nombre: "11. DIGNIDAD",
+                direccion: "Urbanización Dignidad, Av. Japón N° 5015",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Japon+5015+Urbanizacion+Dignidad+El+Alto"
             },
             {
-                nombre: "Iglesia del Nazareno Calata Grande",
-                direccion: "Av. Principal #123, Villa Abaroa",
+                nombre: "12. EL ALTO: APOSENTO ALTO",
+                direccion: "Av. Adela Zamudio N° 1275, Zona San Martín de Porres",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Adela+Zamudio+1275+San+Martin+de+Porres+El+Alto"
+            },
+            {
+                nombre: "13. EL ALTO: BELÉN",
+                direccion: "C. San Javier N° 3364, Zona Santa Ana",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/C+San+Javier+3364+Santa+Ana+El+Alto"
+            },
+            {
+                nombre: "14. EL ALTO: 6 DE JUNIO",
+                direccion: "C. 13 de Noviembre, Zona 6 de Junio",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/C+13+de+Noviembre+6+de+Junio+El+Alto"
+            },
+            {
+                nombre: "15. EL ALTO: 7 DE SEPTIEMBRE",
+                direccion: "Av. La Paz, esq. Av. Cochabamba. Zona Illampu",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+La+Paz+Av+Cochabamba+Illampu+El+Alto"
+            },
+            {
+                nombre: "16. EL ALTO: EL PARAÍSO",
+                direccion: "Calle B N° 1254, Zona La Amistad",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+B+1254+La+Amistad+El+Alto"
+            },
+            {
+                nombre: "17. EL ALTO: FILADELFIA",
+                direccion: "C/ Ricardo Bustamante, Urb. San Martín de Porres",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/C+Ricardo+Bustamante+San+Martin+de+Porres+El+Alto"
+            },
+            {
+                nombre: "18. EL ALTO: LA FLORIDA",
+                direccion: "Ush. La Florida, calle Mejillones S/N",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Ush+La+Florida+Mejillones+El+Alto"
+            },
+            {
+                nombre: "19. EL ALTO: PACAJES",
+                direccion: "Calle Arturo Borda N° 1024, Zona Ilimani",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+Arturo+Borda+1024+Ilimani+El+Alto"
+            },
+            {
+                nombre: "20. EL ALTO: PRIMERO DE MAYO",
+                direccion: "C. Carabuco N° 6004, Z/Villa Primavera",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/C+Carabuco+6004+Villa+Primavera+El+Alto"
+            },
+            {
+                nombre: "21. EL ALTO: SAJAMA",
+                direccion: "C. Ismael Montes N° 2495 Z/ Sajama",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/C+Ismael+Montes+2495+Sajama+El+Alto"
+            },
+            {
+                nombre: "22. EL ALTO: VILLA ABAROA",
+                direccion: "Calle 140 N° 9. Zona Villa Abaroa",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calle+140+9+Villa+Abaroa+El+Alto"
+            },
+            {
+                nombre: "23. EL ALTO: VILLA NATIVIDAD",
+                direccion: "Av. Yotala N° 2814, Z/ Villa Natividad",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Yotala+2814+Villa+Natividad+El+Alto"
+            },
+            {
+                nombre: "24. LUZ DE CRISTO",
+                direccion: "Av. César Valdez N° 4374, Zona Cosmos 79",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Cesar+Valdez+4374+Cosmos+79+El+Alto"
+            },
+            {
+                nombre: "25. VICTORIA",
+                direccion: "El Alto, Calle Urbanización Aurelia- Tilata",
+                zona: "central",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Urbanizacion+Aurelia+Tilata+El+Alto"
+            },
+            {
+                nombre: "26. EL ALTO: ALTO LIMA",
+                direccion: "C. Boquerón y Alto de la Alianza N° 7190",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/C+Boqueron+Alto+de+la+Alianza+7190+El+Alto"
+            },
+            {
+                nombre: "27. EL ALTO: BAUTISTA SAAVEDRA",
+                direccion: "Av. Ballivián, esq. San Román N° 4500, Bautista Saavedra",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Ballivian+San+Roman+4500+Bautista+Saavedra+El+Alto"
+            },
+            {
+                nombre: "28. EL ALTO: 16 DE FEBRERO",
+                direccion: "Av. Estanislao Torres, E José N° 1405, Z. 16 de Febrero",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Estanislao+Torres+E+Jose+1405+16+de+Febrero+El+Alto"
+            },
+            {
+                nombre: "29. EL ALTO: 16 DE JULIO",
+                direccion: "Av. 16 de Julio N° 157. Zona 16 de Julio",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+16+de+Julio+157+16+de+Julio+El+Alto"
+            },
+            {
+                nombre: "30. EL ALTO: EL PROGRESO",
+                direccion: "Av. 17 de Octubre N° 6, Zona El Progreso",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+17+de+Octubre+6+El+Progreso+El+Alto"
+            },
+            {
+                nombre: "31. EL ALTO: GERMAN BUSCH",
+                direccion: "Av. Radio el Condor Calle Santa Catalina, Z/ German Busch",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Radio+el+Condor+Santa+Catalina+German+Busch+El+Alto"
+            },
+            {
+                nombre: "32. EL ALTO: MARISCAL SUCRE",
+                direccion: "Av. Néstor Tahuada Calle Agustín Aspa N° 3235\"B\"",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Nestor+Tahuada+Agustin+Aspa+3235B+El+Alto"
+            },
+            {
+                nombre: "33. EL ALTO: RÍO SECO",
+                direccion: "Av. Tupac Amara N° 8131, Z/ Nueva Jerusalén",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Tupac+Amara+8131+Nueva+Jerusalen+El+Alto"
+            },
+            {
+                nombre: "34. EL ALTO: NUEVA JERUSALÉN",
+                direccion: "C. Illimani N° 50, Alto Lima 3ra. Sección",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/C+Illimani+50+Alto+Lima+3ra+Seccion+El+Alto"
+            },
+            {
+                nombre: "35. EL ALTO: VILLA PALESTINA",
+                direccion: "Urb. Palestina, Calle Exaltación N° 1084",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Urb+Palestina+Calle+Exaltacion+1084+El+Alto"
+            },
+            {
+                nombre: "36. EL ALTO: SAN FELIPE DE SEK'E",
+                direccion: "San Felipe de Sek'e",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/San+Felipe+de+Sek'e+El+Alto"
+            },
+            {
+                nombre: "37. BETANIA",
+                direccion: "Z/ Villa Ingenio, Calle Lodovido Bertonio N° 3085",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Villa+Ingenio+Calle+Lodovido+Bertonio+3085+El+Alto"
+            },
+            {
+                nombre: "38. FORTALEZA (Ex San Roque)",
+                direccion: "Urb. Palestina, San Roque, El Alto",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Urb+Palestina+San+Roque+El+Alto"
+            },
+            {
+                nombre: "39. SAYHUAPAMPA (CARABICO)",
+                direccion: "Comunidad Suyunpampa, Prov. Caracho",
+                zona: "carabuco",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Suyunpampa+Caracho"
+            },
+            {
+                nombre: "40. SAANCHI",
+                direccion: "Comunidad Saanchi, Prov. Camacho",
+                zona: "carabuco",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Saanchi+Camacho"
+            },
+            {
+                nombre: "41. CALATA GRANDE",
+                direccion: "Comunidad Calata Grande, Prov. Manker Kapac",
                 zona: "copacabana",
                 facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calata+Grande+Manker+Kapac"
             },
             {
-                nombre: "Iglesia del Nazareno Calata Capurita",
-                direccion: "Calle Paz #456, Zona Belén",
+                nombre: "42. CALATA CAPURITA",
+                direccion: "Comunidad Calata Capurita, Prov. Manko Kapac",
                 zona: "copacabana",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
-            },
-            {
-                nombre: "Iglesia del Nazareno Isla Suriqui",
-                direccion: "Plaza Central #789, Centro",
-                zona: "copacabana",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
-            },
-            {
-                nombre: "Iglesia del Nazareno Tiquina",
-                direccion: "Av. Libertad #234, Zona Oeste",
-                zona: "copacabana",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Isla del Sol(mision)",
-                direccion: "Calle Esperanza #567, Zona Este",
-                zona: "copacabana",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Corpaputo",
-                direccion: "Av. Cristiana #890, Zona Norte",
-                zona: "cordillera",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
-            },
-            {
-                nombre: "Iglesia del Nazareno Pongonhuyo Berenguela",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
-                zona: "cordillera",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
-            },
-            {
-                nombre: "Iglesia del Nazareno Pongonhuyo Central",
-                direccion: "Cerro Monte Sion #222, Zona Este",
-                zona: "cordillera",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Jaillihuaya",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "cordillera",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
-            },
-            {
-                nombre: "Iglesia del Nazareno Kerani Central",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "cordillera",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Pariri",
-                direccion: "Av. Principal #123, Villa Abaroa",
-                zona: "cordillera",
                 facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calata+Capurita+Manko+Kapac"
             },
             {
-                nombre: "Iglesia del Nazareno Penas",
-                direccion: "Calle Paz #456, Zona Belén",
-                zona: "cordillera",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+                nombre: "43. ISLA SURIQUI",
+                direccion: "Isla Suriqui, Prov. Los Andes",
+                zona: "andesI",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Isla+Suriqui+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Turquia",
-                direccion: "Plaza Central #789, Centro",
-                zona: "cordillera",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+                nombre: "44. TIQUINA",
+                direccion: "San Pedro de Tiquina, Prov. Manco Kapac",
+                zona: "copacabana",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/San+Pedro+de+Tiquina+Manco+Kapac"
             },
             {
-                nombre: "Iglesia del Nazareno Central Calla",
-                direccion: "Av. Libertad #234, Zona Oeste",
-                zona: "machaca",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
-            },
-            {
-                nombre: "Iglesia del Nazareno Jesus de Machaca",
-                direccion: "Calle Esperanza #567, Zona Este",
-                zona: "machaca",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Khonkho Loquiliqui",
-                direccion: "Av. Cristiana #890, Zona Norte",
-                zona: "machaca",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
-            },
-            {
-                nombre: "Iglesia del Nazareno Suramaya",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
-                zona: "machaca",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
-            },
-            {
-                nombre: "Iglesia del Nazareno Tacaca",
-                direccion: "Cerro Monte Sion #222, Zona Este",
-                zona: "machaca",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
-            },
-            {
-                nombre: "Iglesia del Nazareno Yauriri de Machaca",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "machaca",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
-            },
-            {
-                nombre: "Iglesia del Nazareno Nazacara",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "machaca",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
-            },
-                        {
-                nombre: "Iglesia del Nazareno Antacollo",
-                direccion: "Av. Principal #123, Villa Abaroa",
+                nombre: "45. ANTACOLLO",
+                direccion: "Antacollo Bajo, Prov. Omasuyos",
                 zona: "lago",
                 facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Antacollo+Bajo+Omasuyos"
             },
             {
-                nombre: "Iglesia del Nazareno Kalaque Wichiwichi",
-                direccion: "Calle Paz #456, Zona Belén",
+                nombre: "46. CALAQUE WICHIWICHI",
+                direccion: "Comunidad Wichiwichi, Prov. Omasuyos",
                 zona: "lago",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Wichiwichi+Omasuyos"
             },
             {
-                nombre: "Iglesia del Nazareno Huarina",
-                direccion: "Plaza Central #789, Centro",
+                nombre: "47. HUARINA",
+                direccion: "Plazuela de Huarina N° 100, Prov. Omasayos",
                 zona: "lago",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Plazuela+de+Huarina+100+Omasuyos"
             },
             {
-                nombre: "Iglesia del Nazareno Jancko Amaya",
-                direccion: "Av. Libertad #234, Zona Oeste",
+                nombre: "48. JANCKO AMAYA",
+                direccion: "Comunidad Jancko Amaya, Av. Nueva Esperanza",
                 zona: "lago",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Jancko+Amaya+Nueva+Esperanza"
             },
             {
-                nombre: "Iglesia del Nazareno Samancha",
-                direccion: "Calle Esperanza #567, Zona Este",
+                nombre: "49. SAMANCHA",
+                direccion: "Comunidad Samancha, Prov. Omasuyos",
                 zona: "lago",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Samancha+Omasuyos"
             },
             {
-                nombre: "Iglesia del Nazareno Chipamaya",
-                direccion: "Av. Cristiana #890, Zona Norte",
+                nombre: "50. CORPAPUTO",
+                direccion: "Comunidad Corpaputo, Prov. Omasuyos",
+                zona: "lago",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Corpaputo+Omasuyos"
+            },
+            {
+                nombre: "51. JAILLIHUAYA",
+                direccion: "Comunidad Jaillihuaya, Prov. Los Andes",
                 zona: "andesI",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Jaillihuaya+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Kenakahua",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
+                nombre: "52. KERANI CENTRAL",
+                direccion: "Comunidad Kerani Central, Prov. Los Andes",
                 zona: "andesI",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Kerani+Central+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Mucuna",
-                direccion: "Cerro Monte Sion #222, Zona Este",
+                nombre: "53. PARIRI",
+                direccion: "Comunidad Pariri, Prov. Los Andes",
                 zona: "andesI",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Pariri+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Seguenca",
-                direccion: "Av. Celestial #333, Zona Central",
+                nombre: "54. PEÑAS",
+                direccion: "Comunidad Peñas, Prov. Los Andes",
                 zona: "andesI",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Penas+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Huaynapotosi Palcoco",
-                direccion: "Calle Refugio #444, Zona Oeste",
+                nombre: "55. PONGONHUYO BERENGUELA",
+                direccion: "Comunidad Berenguela, Prov. Omasuyos",
+                zona: "lago",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Berenguela+Omasuyos"
+            },
+            {
+                nombre: "56. PONGONHUYO CENTRAL",
+                direccion: "Comunidad Pongonhuyo Central, Prov. Omasuyos",
+                zona: "lago",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Pongonhuyo+Central+Omasuyos"
+            },
+            {
+                nombre: "57. TUQUIA",
+                direccion: "Comunidad Tuquia, Prov. Los Andes",
                 zona: "andesI",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Tuquia+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Lequinoso",
-                direccion: "Av. Libertad #234, Zona Oeste",
+                nombre: "58. CENTRAL CALLA",
+                direccion: "Comunidad Calla Baja, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Calla+Baja+Ingavi"
+            },
+            {
+                nombre: "59. JESÚS DE MACHACA",
+                direccion: "Comunidad Jesús de Machaca, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Jesus+de+Machaca+Ingavi"
+            },
+            {
+                nombre: "60. KHONKHO LIQUILIQUI",
+                direccion: "Comunidad Khonkho Liquiliqui, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Khonkho+Liquiliqui+Ingavi"
+            },
+            {
+                nombre: "61. SURAMAYA",
+                direccion: "Comunidad Suramaya, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Suramaya+Ingavi"
+            },
+            {
+                nombre: "62. TACACA",
+                direccion: "Comunidad Tacaca, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Tacaca+Ingavi"
+            },
+            {
+                nombre: "63. YAURIRI DE MACHACA",
+                direccion: "Comunidad Yauriri de Machaca, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Yauriri+de+Machaca+Ingavi"
+            },
+            {
+                nombre: "64. CHIPAMAYA",
+                direccion: "Localidad Chipamaya, Prov. Los Andes",
                 zona: "andesI",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Chipamaya+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Caleria",
-                direccion: "Calle Esperanza #567, Zona Este",
-                zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenoelredentor",
-                instagram: "https://instagram.com/iglesianazarenoelredentor",
-                youtube: "https://youtube.com/iglesianazarenoelredentor",
-                maps: "https://maps.google.com/?q=Calle+Esperanza+567+Zona+Este"
+                nombre: "65. KENAKAHUA",
+                direccion: "Comunidad Kenakahua, Prov. Los Andes",
+                zona: "andesI",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Kenakahua+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Khonkho Catavi",
-                direccion: "Av. Cristiana #890, Zona Norte",
-                zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenoemmanuel",
-                instagram: "https://instagram.com/iglesianazarenoemmanuel",
-                youtube: "https://youtube.com/iglesianazarenoemmanuel",
-                maps: "https://maps.google.com/?q=Av+Cristiana+890+Zona+Norte"
+                nombre: "66. LEQUIÑOSO",
+                direccion: "Comunidad Lequiñoso, Prov. Los Andes",
+                zona: "andesI",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Lequinoso+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Central Copajira",
-                direccion: "Calle Roca Fuerte #111, Zona Sur",
-                zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenolaroca",
-                instagram: "https://instagram.com/iglesianazarenolaroca",
-                youtube: "https://youtube.com/iglesianazarenolaroca",
-                maps: "https://maps.google.com/?q=Calle+Roca+Fuerte+111+Zona+Sur"
+                nombre: "67. MUCUÑA",
+                direccion: "Comunidad Mucuña, Prov. Los Andes",
+                zona: "andesI",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Mucuna+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Huacullani",
-                direccion: "Cerro Monte Sion #222, Zona Este",
-                zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenomontesion",
-                instagram: "https://instagram.com/iglesianazarenomontesion",
-                youtube: "https://youtube.com/iglesianazarenomontesion",
-                maps: "https://maps.google.com/?q=Cerro+Monte+Sion+222+Zona+Este"
+                nombre: "68. PUCARANI",
+                direccion: "Calle Ángel Rivera, Comunidad Pucarani, Prov. Los Andes",
+                zona: "andesI",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Pucarani+Angel+Rivera+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Cantapa",
-                direccion: "Av. Celestial #333, Zona Central",
-                zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenopuertadelcielo",
-                instagram: "https://instagram.com/iglesianazarenopuertadelcielo",
-                youtube: "https://youtube.com/iglesianazarenopuertadelcielo",
-                maps: "https://maps.google.com/?q=Av+Celestial+333+Zona+Central"
+                nombre: "69. SEGÜENCA",
+                direccion: "Comunidad Següenca, Prov. Los Andes",
+                zona: "andesI",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Seguenca+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Puchuni",
-                direccion: "Calle Refugio #444, Zona Oeste",
-                zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenorefugioeterno",
-                instagram: "https://instagram.com/iglesianazarenorefugioeterno",
-                youtube: "https://youtube.com/iglesianazarenorefugioeterno",
-                maps: "https://maps.google.com/?q=Calle+Refugio+444+Zona+Oeste"
+                nombre: "70. HUAYNA POTOSÍ PALCOCO",
+                direccion: "Comunidad Viruyo, Prov. Los Andes",
+                zona: "andesI",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Viruyo+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Santa Rosa de Taraco",
-                direccion: "Av. Principal #123, Villa Abaroa",
+                nombre: "71. CALERIA",
+                direccion: "Comunidad Caleria, Prov. Los Andes",
                 zona: "andesII",
                 facebook: "#",
-                instagram: "https://instagram.com/iglesianazarenovillaabaroa",
-                youtube: "https://youtube.com/iglesianazarenovillaabaroa",
-                maps: "https://maps.google.com/?q=Av+Principal+123+Villa+Abaroa"
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Caleria+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Viluyo",
-                direccion: "Calle Paz #456, Zona Belén",
+                nombre: "72. CANTAPA",
+                direccion: "Comunidad Kantapa, Prov. Los Andes",
                 zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenobelen",
-                instagram: "https://instagram.com/iglesianazarenobelen",
-                youtube: "https://youtube.com/iglesianazarenobelen",
-                maps: "https://maps.google.com/?q=Calle+Paz+456+Belén"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Kantapa+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Yanamuyo",
-                direccion: "Plaza Central #789, Centro",
+                nombre: "73. CATAVI",
+                direccion: "Comunidad Catavi, Prov. Los Andes",
                 zona: "andesII",
-                facebook: "https://facebook.com/iglesianazarenofeyesperanza",
-                instagram: "https://instagram.com/iglesianazarenofeyesperanza",
-                youtube: "https://youtube.com/iglesianazarenofeyesperanza",
-                maps: "https://maps.google.com/?q=Plaza+Central+789+Centro"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Catavi+Los+Andes"
             },
             {
-                nombre: "Iglesia del Nazareno Nueva Cobija",
-                direccion: "Av. Libertad #234, Zona Oeste",
+                nombre: "74. CENTRAL COPAJIRA",
+                direccion: "Comunidad Central Copajira, Prov. Los Andes",
+                zona: "andesII",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Central+Copajira+Los+Andes"
+            },
+            {
+                nombre: "75. HUACULLANI",
+                direccion: "Cantón Huacullani, Prov. Ingavi",
+                zona: "andesII",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Huacullani+Ingavi"
+            },
+            {
+                nombre: "76. PUCHUNI",
+                direccion: "Comunidad Puchuni, Prov. Los Andes",
+                zona: "andesII",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Puchuni+Los+Andes"
+            },
+            {
+                nombre: "77. SANTA ROSA DE TARACO",
+                direccion: "Comunidad Santa Rosa de Taraco, Prov. Los Andes",
+                zona: "andesII",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Santa+Rosa+de+Taraco+Los+Andes"
+            },
+            {
+                nombre: "78. VILUYO",
+                direccion: "Comunidad Viluyo, Prov. Ingavi",
+                zona: "andesII",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Viluyo+Ingavi"
+            },
+            {
+                nombre: "79. NUEVA COBIJA",
+                direccion: "Departamento de Cobija Pando",
                 zona: "cobija/Pando",
-                facebook: "https://facebook.com/iglesianazarenograciadivina",
-                instagram: "https://instagram.com/iglesianazarenograciadivina",
-                youtube: "https://youtube.com/iglesianazarenograciadivina",
-                maps: "https://maps.google.com/?q=Av+Libertad+234+Zona+Oeste"
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Cobija+Pando+Bolivia"
+            },
+            {
+                nombre: "80. ISLA DEL SOL",
+                direccion: "Comunidad Isla del Sol, Prov. Manco Kapac",
+                zona: "copacabana",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Isla+del+Sol+Manco+Kapac"
+            },
+            {
+                nombre: "81. HUAYNA POTOSÍ",
+                direccion: "El Alto, z. Huayna Potosí. Ira Sección # 2114 C. Azteca",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Huayna+Potosi+Ira+Seccion+2114+C+Azteca+El+Alto"
+            },
+            {
+                nombre: "82. VILLA POMAMAYA",
+                direccion: "El Alto, Zona San Roque",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Villa+Pomamaya+San+Roque+El+Alto"
+            },
+            {
+                nombre: "83. AVANZADA YANAMUYO",
+                direccion: "Comunidad Yanamuyo Alto",
+                zona: "andesII",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Yanamuyo+Alto"
+            },
+            {
+                nombre: "84. ITALACQUE (Reabierta)",
+                direccion: "Comunidad Italaque",
+                zona: "carabuco",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Italaque"
+            },
+            {
+                nombre: "85. NAZACARA",
+                direccion: "Comunidad Yauriri de Machaca, Prov. Ingavi",
+                zona: "machaca",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Nazacara+Yauriri+Machaca+Ingavi"
+            },
+            {
+                nombre: "86. TACACHIRA",
+                direccion: "Comunidad",
+                zona: "carabuco",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Tacachira"
+            },
+            {
+                nombre: "87. AVANZADA SANTA MARÍA",
+                direccion: "Avenida Perimetral \"B\" Lote 3,4,5 Distrito 3",
+                zona: "sur",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Av+Perimetral+B+Lote+3+4+5+Distrito+3+El+Alto"
+            },
+            {
+                nombre: "88. MILLUNI BAJO",
+                direccion: "El Alto, Lima",
+                zona: "norte",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Milluni+Bajo+El+Alto"
+            },
+            {
+                nombre: "89. TILACOCA (Reabierta)",
+                direccion: "Comunidad Tilacoca",
+                zona: "carabuco",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Tilacoca"
+            },
+            {
+                nombre: "90. JOKOPAMPA",
+                direccion: "Comunidad Jokopampa",
+                zona: "carabuco",
+                facebook: "#",
+                instagram: "#",
+                youtube: "#",
+                maps: "https://www.google.com/maps/place/Jokopampa"
             }
         ];
 
@@ -893,19 +884,17 @@
             filteredIglesias.forEach((iglesia, index) => {
                 html += `
                     <div class="church-card fade-in">
-                        <h4>${iglesia.nombre}</h4>
-                        <div class="church-location">
+                        <h4 class="church-title">${iglesia.nombre}</h4>
+                        <div class="church-address-line">
                             <i class="bi bi-geo-alt"></i>
-                            <div>
-                                <strong>Dirección:</strong> ${iglesia.direccion}
+                            <span><strong>Dirección:</strong> ${iglesia.direccion}</span>
+                        </div>
+                        <a href="${iglesia.maps}" target="_blank" class="maps-icon-link" title="Ver en Google Maps">
+                            <div class="maps-icon-circle">
+                                <i class="bi bi-geo-alt-fill"></i>
                             </div>
-                        </div>
-                        <div class="social-icons-sm">
-                            <a href="${iglesia.maps}" target="_blank" class="social-icon location-icon" title="Ver en Google Maps">
-                                <i class="bi bi-geo-alt"></i>
-                            </a>
-                        </div>
-                        <div class="mt-3">
+                        </a>
+                        <div class="mt-2">
                             <span class="badge bg-primary">${getZonaName(iglesia.zona)}</span>
                         </div>
                     </div>

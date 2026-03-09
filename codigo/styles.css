@@ -251,6 +251,26 @@
             margin-bottom: 0.5rem;
         }
         
+        .church-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .church-address-line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        .church-address-line i {
+            color: var(--primary-color);
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+        
         .church-pastor {
             color: var(--accent-color);
             font-weight: 600;
@@ -273,6 +293,26 @@
             color: var(--primary-color);
             margin-right: 10px;
             margin-top: 3px;
+        }
+        
+        .church-location .badge.bg-success {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+            font-size: 0.85rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .church-location .badge.bg-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            background: linear-gradient(135deg, #218838 0%, #1e7e34 100%) !important;
+        }
+        
+        .church-location a {
+            color: inherit;
         }
         
         .social-icons-sm {
@@ -307,6 +347,36 @@
         
         .youtube-icon {
             background-color: #ff0000;
+        }
+        
+        /* Maps icon circular style */
+        .maps-icon-link {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+        
+        .maps-icon-circle {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a936f 0%, #0d8b6d 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(26, 147, 111, 0.3);
+        }
+        
+        .maps-icon-circle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(26, 147, 111, 0.4);
+        }
+        
+        .maps-icon-circle i {
+            font-size: 1.2rem;
+            color: white;
         }
         
         .location-icon {
@@ -580,45 +650,83 @@
 
         .news-card {
             background: var(--surface-1);
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             box-shadow: var(--shadow-1);
             height: 100%;
             transition: transform var(--dur-slow) var(--ease-calm), box-shadow var(--dur-slow) var(--ease-calm);
             border: 1px solid var(--border-1);
+            display: flex;
+            flex-direction: column;
         }
 
         .news-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-8px);
             box-shadow: var(--shadow-2);
         }
 
         .news-img {
-            height: 180px;
+            height: 200px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-color: var(--surface-2);
+            position: relative;
+        }
+
+        .news-img::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(to top, var(--surface-1), transparent);
         }
 
         .news-content {
             padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .news-date {
-            color: var(--text-2);
-            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            font-weight: 600;
             margin-bottom: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.75rem;
+            background: rgba(20, 143, 119, 0.1);
+            border-radius: 20px;
+            width: fit-content;
+        }
+
+        .news-date i {
+            font-size: 0.9rem;
         }
 
         .news-card h5 {
-            color: var(--text-1);
+            color: var(--primary-color);
             margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 1.4;
         }
 
         .news-card p {
             color: var(--text-2);
             margin-bottom: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        [data-theme="dark"] .news-date {
+            background: rgba(20, 143, 119, 0.2);
         }
         
         /* Estilos para las páginas de contenido */
@@ -686,18 +794,18 @@
         }
         
         .ministry-page-image {
-            height: 300px;
+            height: 200px;
             border-radius: 10px;
             background-size: cover;
             background-position: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
         
         .ministry-info-box {
             background-color: var(--peace-color);
             border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
         }
         
         .ministry-info-box h5 {
